@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.4",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
+    "@next/font": "^13.1.4",
     "next": "13.1.4",
+    "opencv-react": "^0.0.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-webcam": "^7.0.1",
+    "react-youtube": "^10.1.0"
   }
 }
