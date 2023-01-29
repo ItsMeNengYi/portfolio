@@ -18,13 +18,14 @@ export default function Selenium(params) {
         </Typography>
 
         <Typography>
-            First, the program can be inconsistent sometimes, so I created a "finished.txt" to prevent sending message to peaple more than once when rerunning the program.
+            First, the program can be inconsistent sometimes, so I created a "Finished.txt" to prevent sending message to peaple more than once when rerunning the program.
             Seconly, the user might already block you. I wrote a function to detect if the user has blocked you(which is to check if the textbox is available)
         </Typography>
 
         <Image width='500' height='500' src='/selenium/entername.png'/>
         <Typography>
-            Furthurmore, I encountered a tideous bug which the user is exist but if you paste the name directly it cant be searched. You need to type the user name one by one in order to search the user. So I created another file "ProblemList.txt" to note down those user's name and I wrote a function to enter name one by one at first and gradually increase it speed(which is decrease the time.sleep() parameter)
+            Furthurmore, I encountered a tideous bug which the user is exist but if you paste the name directly in the search box, the name cant be searched. You need to type the user name one character by one character
+             in order to search the user. So I created another file "ProblemList.txt" to note down those user's name and I wrote a function to enter name one by one at first and gradually increase it speed(which is decrease the time.sleep() parameter). So what my bot do is everytime it enter the user name, if the user can be search, the bot will check if the user has blocked you, if the user profile doesnt appear, it will put the name into "ProblemList.txt" file and reenter the name one character by one character, if the user profile appear to be found then the code will keep going and the bot will write its name in "Failed.txt" if its not and keep goin to the next customer. 
         </Typography>
 
         <YoutubeVideo name="selenium send file"src="sJ254k8dQqA"/>
