@@ -21,12 +21,13 @@ export default function ProjectHomepage() {
                     <LinkCard link="/project/selenium">Selenium</LinkCard>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <LinkCard link="/project/threeD">Wireframe modeling</LinkCard>
-                </Grid>
+                    <LinkCard link="/project/threeD">Wireframe Modeling</LinkCard>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <LinkCard link="/project/opencv">Open CV</LinkCard>
                 </Grid>
+                
+            </Grid>
         </BorderCard>
     </Page>
 };

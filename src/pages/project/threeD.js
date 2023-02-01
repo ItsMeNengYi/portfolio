@@ -9,7 +9,7 @@ export default function threeD() {
          I start this project is to have better understanding about how computer graphic works. My idea is to create a space, a cube and a pyramid shape camera. I thought the perspective is simply just 
          </Typography>
         
-        <Image width='500' height='500' src='/pygame/pic1.png'/>
+        {/* <Image width='500' height='500' src='/pygame/pic1.png'/> */}
         
     </div>
 
