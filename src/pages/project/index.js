@@ -12,21 +12,21 @@ export default function ProjectHomepage() {
             <Navbar />
             <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
-                    <LinkCard link="/project/opencv">Open CV</LinkCard>
+                    <LinkCard link="/project/python-little-game">Some little games</LinkCard>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <LinkCard link="/project/pygame">Pygame</LinkCard>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <LinkCard link="/project/python-little-game">Some little games</LinkCard>
-                </Grid>
-                <Grid item xs={12} md={6}>
                     <LinkCard link="/project/selenium">Selenium</LinkCard>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <LinkCard link="/project/ue">Unreal Engine</LinkCard>
+                    <LinkCard link="/project/threeD">Wireframe modeling</LinkCard>
                 </Grid>
-            </Grid>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <LinkCard link="/project/opencv">Open CV</LinkCard>
+                </Grid>
         </BorderCard>
     </Page>
 };

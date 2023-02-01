@@ -7,12 +7,6 @@ export default function BorderCard(props) {
         maxWidth={false}
         sx={{
             border: '4px solid #815B5B',
-            position: "relative",
-            height: "50vh",
-            width: "60vw",
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
             ...sx
         }}>
         {children}

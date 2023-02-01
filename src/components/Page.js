@@ -9,7 +9,6 @@ export default function Page(props) {
         sx={{
             ...sx,
             p: 3,
-            height: '100vh',
             display: 'flex',
             alignItems: 'center'
         }}>

@@ -17,7 +17,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Page>
-        <BorderCard>
+        <BorderCard 
+            sx={{position: "relative",
+            height: "50vh",
+            width: "60vw",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'}}>
           <Navbar />
           <Introduction />
           <SocialMedia />
