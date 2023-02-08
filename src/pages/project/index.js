@@ -24,7 +24,10 @@ export default function ProjectHomepage() {
                     <LinkCard link="/project/threeD">Wireframe Modeling</LinkCard>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <LinkCard link="/project/opencv">Open CV</LinkCard>
+                    <LinkCard link="/project/cs_fifty">CS50</LinkCard>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <LinkCard link="/project/other">Others</LinkCard>
                 </Grid>
                 
             </Grid>
