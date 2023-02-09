@@ -6,11 +6,10 @@ export default function Page(props) {
 
     return <Container
         maxWidth="100vw"
+        height= '100vw'
         sx={{
             ...sx,
-            p: 3,
-            display: 'flex',
-            alignItems: 'center'
+            p: 10
         }}>
         {children}
     </Container >

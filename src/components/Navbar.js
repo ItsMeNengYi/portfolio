@@ -1,6 +1,18 @@
 import Link from 'next/link'
-import { AppBar, Toolbar, IconButton, Typography, Button, Box } from "@mui/material";
+import { AppBar, Toolbar, IconButton, Typography, Button, Box,Grid } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+
+const textDeco = {
+    textDecoration:"none",
+    '&:hover':{
+        textDecoration:"underline",
+        textDecorationColor:"#594545",
+    },
+    transition: "textDecoration 1s",
+    transitionTimingFunction: "linear",
+    color: '#594545',
+      
+}
 
 export default function Navbar(props) {
     const { sx } = props
@@ -15,23 +27,21 @@ export default function Navbar(props) {
             ...sx
         }}
     >
+        <Box sx={{mr:"20px",ml:"20px"}}>
         <Typography
             variant="h4"
-            sx={{
-
-                bgcolor: "#F8EDE3"
-            }}
+            sx={textDeco}
         >
-            <Link href="/" style={{ textDecoration: 'none', color: 'black', marginLeft: "20px", marginRight: "20px" }}>Home</Link>
+            <Link href="/"  style={textDeco}>Home</Link>
         </Typography>
+        </Box>
+        <Box sx={{mr:"20px"}}>
         <Typography
             variant="h4"
-            sx={{
-
-                bgcolor: "#F8EDE3"
-            }}
+            sx={textDeco}
         >
-            <Link href="/project" style={{ textDecoration: 'none', color: 'black', marginRight: "20px" }}>Project</Link>
+            <Link href="/project" style={textDeco}>Project</Link>
         </Typography>
+        </Box>
     </Box>
 };

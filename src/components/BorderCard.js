@@ -6,7 +6,9 @@ export default function BorderCard(props) {
     return <Container
         maxWidth={false}
         sx={{
-            border: '4px solid #815B5B',
+            border: '4px solid #815B5B', 
+            px:1,
+            py:2,
             ...sx
         }}>
         {children}

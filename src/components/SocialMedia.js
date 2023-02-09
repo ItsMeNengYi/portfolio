@@ -11,21 +11,22 @@ export default function SocialMedia({ sx }) {
             bgcolor: "#F8EDE3",
             boxShadow: 'none',
             position: 'absolute',
+            justifyContent:"center",
             bottom: -20,
-            width: 0.2,
             ...sx
         }}
     >
+
         <a style={{ textDecoration: "none", color: "black" }}
             href="https://www.instagram.com/renyickgan" target="_blank"
             rel="noopener noreferrer">
-            <InstagramIcon fontSize="large" sx={{ ml: 3 }} />
+            <InstagramIcon fontSize="large" sx={{ ml: 3,mr:2 }} />
         </a>
 
         <a style={{ textDecoration: "none", color: "black" }}
             href="https://www.facebook.com/profile.php?id=100009107746541" target="_blank"
             rel="noopener noreferrer">
-            <FacebookIcon fontSize="large" />
+            <FacebookIcon fontSize="large" sx={{mr:2}}/>
         </a>
 
         <a style={{ textDecoration: "none", color: "black" }}

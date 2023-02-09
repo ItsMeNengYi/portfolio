@@ -1,20 +1,38 @@
-import { Typography } from "@mui/material"
+import { Typography, Box,Stack } from "@mui/material"
 import Image from "next/image"
-import Link from 'next/link'
 import YoutubeVideo from "@/components/Youtube"
 import Page from "@/components/Page"
 import ContentContainer from "@/components/ContentContainer"
 import BorderCard from "@/components/BorderCard"
+import Navbar from "@/components/Navbar"
+
+const title={
+    position: 'relative',
+    top: -40,
+    backgroundColor: "#F8EDE3",
+    maxWidth: "15%",
+    alignItem:"center",
+    px:2,
+    color:"#815B5B",
+    fontFamily:"Arial"
+}
 
 export default function Pygame() {
     return <div>
         <Page>
-            <ContentContainer>
+        <ContentContainer>
+            <Navbar sx={{top:10}}/>
+            <Stack spacing={5}>
+
+                <BorderCard>
+                    <Typography sx={title} variant="h4">Pygame</Typography>
                 <YoutubeVideo src="642X_Dq_1SU"/>
-                    <Typography> 
+                    <Typography variant="subtitle1"> 
                         This game is based on this <a href="https://www.youtube.com/watch?v=61eX0bFAsYs&t=2384s&ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83" target="_blank"
             rel="noopener noreferrer">online youtube project</a>. But as you can see, my project and the tutorial is quite different.
                     </Typography>
+                </BorderCard>
+
                     <Image width='500' height='500' src='/pygame/pic1.png'/>
                     <Image width='500' height='500' src='/pygame/code1.png'/>
                     <Typography>
@@ -36,6 +54,7 @@ export default function Pygame() {
                     <Typography>
                         Zekai is my friend which provide the picture and sound effects used in this project.
                     </Typography>
+                </Stack>
             </ContentContainer>
         </Page>
         
