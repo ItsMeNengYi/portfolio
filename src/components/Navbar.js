@@ -7,7 +7,9 @@ const textDeco = {
     '&:hover':{
         textDecoration:"underline",
         textDecorationColor:"#594545",
+        textShadow:"#FC0 1px 0 10px"
     },
+    textShadow:"none",
     transition: "textDecoration 1s",
     transitionTimingFunction: "linear",
     color: '#594545',
@@ -26,6 +28,7 @@ export default function Navbar(props) {
             top: -30,
             ...sx
         }}
+        
     >
         <Box sx={{mr:"20px",ml:"20px"}}>
         <Typography

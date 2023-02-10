@@ -20,8 +20,9 @@ export default function Introduction() {
                     Hi, Im Ren Yick
             </Typography>
             <Typography>嗨，我是能义</Typography>
-        </Card> */}
-        <Typography>
+        </Card>  */}
+
+        <Typography fontSize="40px" textShadow="#FC0 1px 0 10px">
                     Hi, Im Ren Yick
             </Typography>
         {/* <Typography>嗨，我是能义</Typography> */}

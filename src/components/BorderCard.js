@@ -1,7 +1,7 @@
 import { Container } from "@mui/material"
 
 export default function BorderCard(props) {
-    const { children, sx, } = props
+    const { children, sx } = props
 
     return <Container
         maxWidth={false}

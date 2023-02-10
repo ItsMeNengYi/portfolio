@@ -33,6 +33,8 @@ export default function Pygame() {
                     </Typography>
                 </BorderCard>
 
+                <BorderCard>
+                <Typography sx={title} variant="h4">Features</Typography>
                     <Image width='500' height='500' src='/pygame/pic1.png'/>
                     <Image width='500' height='500' src='/pygame/code1.png'/>
                     <Typography>
@@ -40,12 +42,10 @@ export default function Pygame() {
                     </Typography>
 
                     <Image width='500' height='500' src='/pygame/code2.png'/>
-                    <Image width='500' height='500' src='/pygame/pic3.png'/>
                     <YoutubeVideo src="zBYnXNOALEU"/>
                     <Typography>
                         I then need to determind which direction will the bullet propagate as in the youtube tutorial the player cant be rotated. I implement this feature using similar math approach. Find the increments of x and y direction and form a vector of magnitude of self.speed which is one of the properties of Bullet class. At first I implement using tangent value as seen in the video below, I didnt figure out why the bullet speed is not consistent but I leave it first as the direction of propagation is okay, afterwards I found out that the tangential value is affecting the bullet speed.
                             Other than direction of bullet, I also implemented a buffed version of shooting bullet which the bullet will be shot from three point as shown in first video.
-                        ** I actually has no idea what I wrote in pic3 but it genuinely is the draft I wrote to find the buffed bullets spawn coordinates  
                     </Typography>
                     <Typography>
                         The source code and exe file can be downloaded in this <a href="https://github.com/ItsMeFaquu/Zekai_hit_shit" target="_blank"
@@ -54,6 +54,8 @@ export default function Pygame() {
                     <Typography>
                         Zekai is my friend which provide the picture and sound effects used in this project.
                     </Typography>
+                </BorderCard>
+
                 </Stack>
             </ContentContainer>
         </Page>

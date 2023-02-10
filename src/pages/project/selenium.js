@@ -1,24 +1,50 @@
-import { Typography } from "@mui/material"
+import { Typography, Stack } from "@mui/material"
 import Image from "next/image"
 import Link from 'next/link'
 import YoutubeVideo from "@/components/Youtube"
 import Page from "@/components/Page"
 import ContentContainer from "@/components/ContentContainer"
+import Navbar from "@/components/Navbar"
 import BorderCard from "@/components/BorderCard"
+
+const title={
+    position: 'relative',
+    top: -40,
+    backgroundColor: "#F8EDE3",
+    maxWidth: "20%",
+    alignItem:"center",
+    px:2,
+    color:"#815B5B",
+    fontFamily:"Arial"
+}
 
 export default function Selenium(params) {
         return <div>
             <Page>
                 <ContentContainer>
-                    <YoutubeVideo name="selenium first ver"src="Uywk9PQqmw8"/>
-                    <Typography>
-                        This project is to imitate sending message action using selenium. Video above show the first version which user is selected using xpath. But then I quickly realise that you need to scroll down to be able to select the unloaded user.
-                    </Typography>
+                    <Navbar sx={{top:20}}/>
+                    <Stack spacing={5}>
 
+                    <BorderCard>
+                        <Typography sx={title} variant="h4">Spam Bot ver1</Typography>
+                        <YoutubeVideo name="selenium first ver"src="Uywk9PQqmw8"/>
+                        <Typography>
+                            This project is to imitate sending message action using selenium. Video above show the first version which user is selected using xpath. But then I quickly realise that you need to scroll down to be able to select the unloaded user.
+                        </Typography>
+                    </BorderCard>
+                    <BorderCard>
+                        <Typography sx={title} variant="h4">Spam Bot final ver</Typography>
+                        <YoutubeVideo name="selenium send file"src="ChaI6lvdbQM"/>
+                        <a href="https://github.com/ItsMeFaquu/FacebookSpamBot" target="_blank"
+            rel="noopener noreferrer">github code link</a>
+                    </BorderCard>
+
+                    <BorderCard>
+                    <Typography sx={title} variant="h4">Title</Typography>
                     <Image width='500' height='500' src='/selenium/txtfile.png'/>
                     <Image width='500' height='500' src='/selenium/readfile.png'/>
                     <Typography>
-                        My second approach is to select users using search bar and name. I wrote a function to read .txt file into an array and loop through the array. But then I encountered more obstacles. 
+                        My second approach(which is last version) is to select users using search bar and name. I wrote a function to read .txt file into an array and loop through the array. But then I encountered more obstacles. 
                     </Typography>
 
                     <Typography>
@@ -36,14 +62,12 @@ export default function Selenium(params) {
                     <Typography>
                         Then I added more function such as send file(video and pictures to be specific)which consist of file explorer control action, so I import and use autoit to make the job done.
                     </Typography>
-
-                    <YoutubeVideo name="selenium send file"src="ChaI6lvdbQM"/>
+ 
                     <Typography>
-                        A lot more features and details are not listed here but in the code itself. Unfortunatelly the code is quite troublesome to run cause you need to setup the environtment such as download the chromedriver and create multiple file. And the code itself is specifically for sending message in business account which is the intention to spam advertisements to customers. Instead, I alter the code a bit and make it a facebook spam bot and the video above shows how it works. This altered version of code doesnt use some of the features so I will provide both business and facebook version of code.
+                        A lot more features and details are not listed here but in the code itself. Unfortunatelly the code is quite troublesome to run cause you need to setup the environtment such as download the chromedriver and create multiple file. And the code itself is specifically for sending message in business account which is the intention to spam advertisements to customers. Instead, I alter the code a bit and make it a facebook spam bot and the video above shows how it works. 
                     </Typography>
-                    <Typography>
-                        ##TODO upload github link of code
-                    </Typography>
+                    </BorderCard>
+                    </Stack>
             </ContentContainer>         
         </Page>
     </div> 
