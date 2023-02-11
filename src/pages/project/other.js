@@ -14,7 +14,7 @@ const title={
     position: 'relative',
     top: -40,
     backgroundColor: "#F8EDE3",
-    maxWidth: "20%",
+    maxWidth: "30%",
     alignItem:"center",
     px:2,
     color:"#815B5B",
@@ -30,34 +30,44 @@ export default function other() {
             <BorderCard>
                 <Typography sx={title} variant="h4">Unreal Engine 4</Typography>
                 <YoutubeVideo src="8tRyHP2RDWA"/>
-                ## UE4note1 and UE4note2.pdf
                 <div style={{width:"200px",height:"220px"}}>
                 <Image src='/other/udemy.png'/>
+                <Link href="../../../other/UE4note1.pdf">
+                    <Typography>UE4 note 1</Typography>
+                </Link>
+                <Link href="../../../other/UE4note2.pdf">
+                    <Typography>UE4 note 2</Typography>
+                </Link>
                 </div>
-                <Typography>
+                
                     I follow a course in udemy and learnt how to use unreal engine4. Throughout this learning, I learn(most of them on youtube): 
-                    C++ syntax, 
-                    -Unreal engine hierarchy system(Object-{'>'}actor-{'>'}pawn-{'>'}character), 
-                    -sophisticated object oriented programming throughout the course, 
-                    -header file for declaring functions and variables and cpp file for implementing,
-                    -why pointer is heavily used in game programming(to save memory by using same adderess), 
-                    -how to save every little memory usage(use unsigned int,use CONST,pointer...)
-                    -how to "communicate" between classes(getter and setter), 
-                    -difference between struct and class(class is private by default while struct is public), 
-                    -three stages of C++ (Preprocessing stage, Compiling stage, Linking stage)
-                    -Preprocessor directive(get replace by code in proprocessing stage),
-                    -Define (macro name will be replace by replacement text),
-                    -unreal engine 4 system(components, functions, user interface, I actually wrote dozens of notes about this)
-                    Things I want to learn:
-                    -How inverse kinematic works
-                    -How this insane game engine is written
-                    -How object is rendered
-                    -How animation blending works
-                </Typography>
+                    <ul>
+                        <li>C++ syntax,</li>
+                        <li>Unreal engine hierarchy system(Object-{'>'}actor-{'>'}pawn-{'>'}character), </li>
+                        <li>sophisticated object oriented programming throughout the course, </li>
+                        <li>header file for declaring functions and variables and cpp file for implementing,</li>
+                        <li>why pointer is heavily used in game programming(to save memory by using same adderess), </li>
+                        <li>how to save every little memory usage(use unsigned int,use CONST,pointer...)</li>
+                        <li>how to "communicate" between classes(getter and setter), </li>
+                        <li>difference between struct and class(class is private by default while struct is public), </li>
+                        <li>three stages of C++ (Preprocessing stage, Compiling stage, Linking stage)</li>
+                        <li>Preprocessor directive(get replace by code in proprocessing stage),</li>
+                        <li>Define (macro name will be replace by replacement text),</li>
+                        <li>unreal engine 4 system(components, functions, user interface, I actually wrote dozens of notes about this)</li>
+                        
+                    </ul>
+                        Things I want to learn:
+                    <ul>
+                        <li>How inverse kinematic works</li>
+                        <li>How this insane game engine is written</li>
+                        <li>How object is rendered</li>
+                        <li>How animation blending works</li>
+                    </ul>
+                
          </BorderCard>
 
          <BorderCard>
-            <Typography sx={title} variant="h4">Blender</Typography>
+            <Typography sx={[title,{maxWidth: "15%"}]} variant="h4">Blender</Typography>
             <YoutubeVideo src="FEe7hHzBhQI"/>
             <Image src='/other/blender.png'/>
             <Typography>
@@ -72,19 +82,22 @@ export default function other() {
             <div style={{width:"200px",height:"220px"}}>
             <Image src='/other/network.png'/>
             </div>
-            ## hacking.pdf
-            <Typography>
+            
                 I follow a network hacking course in udemy. I learn:
-                - Using terminal instead of graphic interface
-                - WEP cracking(useless, no one use WEP nowadays)
-                - WPA/WPA2 cracking (almost useless, I need a password to decode the package and only ways is brute force)
-                - create wordlist for password brute forcing(almost useless)
-                - MITM attack (useless unless some dumbass use HTTP instead of HTTPS and HSTS)
-                - idea of bypassing HTTP (downgrade to HTTP and I didnt success)
-                - disconnect others wifi connection by deauthentication attack (spamming deauthentication message to router,fun and useful)
-                - Basic idea of networking
+                <ul>
+                    <li> Using terminal instead of graphic interface</li>
+                    <li> WEP cracking(useless, no one use WEP nowadays)</li>
+                    <li> WPA/WPA2 cracking (almost useless, I need a password to decode the package and only ways is brute force)</li>
+                    <li> create wordlist for password brute forcing(almost useless)</li>
+                    <li> MITM attack (useless unless some dumbass use HTTP instead of HTTPS and HSTS)</li>
+                    <li> idea of bypassing HTTP (downgrade to HTTP and I didnt success)</li>
+                    <li> disconnect others wifi connection by deauthentication attack (spamming deauthentication message to router,fun and useful)</li>
+                    <li> Basic idea of networking</li>
+                </ul>
                 I also wrote a note for this course.
-            </Typography>
+                <Link href="../../../other/hacking.pdf">
+                    <Typography>network hacking note</Typography>
+                </Link>
          </BorderCard>
          </Stack>
          </ContentContainer>
