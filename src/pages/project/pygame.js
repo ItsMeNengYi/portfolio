@@ -11,27 +11,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
 
-
-
-const responsive = {
-    desktop: {
-      breakpoint: { max: 464, min: 0 },
-      items: 3 ,
-      slidesToSlide: 1
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    }
-  };
-
-
 const title={
     position: 'relative',
     top: -40,
@@ -61,7 +40,12 @@ export default function Pygame() {
 
                 <BorderCard>
                 <Typography sx={title} variant="h4">Features</Typography>
-                    <Carousel>
+                    <Carousel 
+                        autoPlay={true}
+                        interval={5}
+                        dynamicHeight={true }
+                        infiniteLoop={true }
+                    >
                         <div>
                             <Image src='/pygame/pic1.png'/>
                         </div>

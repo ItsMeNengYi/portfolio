@@ -14,7 +14,7 @@ const title={
     position: 'relative',
     top: -40,
     backgroundColor: "#F8EDE3",
-    maxWidth: "20%",
+    maxWidth: "28%",
     alignItem:"center",
     px:2,
     color:"#815B5B",
@@ -36,21 +36,26 @@ export default function Selenium(params) {
                         </Typography>
                     </BorderCard>
                     <BorderCard>
-                        <Typography sx={title} variant="h4">Spam Bot final ver</Typography>
+                        <Typography sx={[title,{maxWidth: "35%"}]} variant="h4">Spam Bot final ver</Typography>
                         <YoutubeVideo name="selenium send file"src="ChaI6lvdbQM"/>
                         <a href="https://github.com/ItsMeFaquu/FacebookSpamBot" target="_blank"
             rel="noopener noreferrer">github code link</a>
                     </BorderCard>
 
                     <BorderCard>
-                    <Typography sx={title} variant="h4">Title</Typography>
+                    <Typography sx={title} variant="h4">Some Details</Typography>
 
-                    <Carousel>
+                    <Carousel 
+                        autoPlay={true}
+                        interval={5}
+                        dynamicHeight={true }
+                        infiniteLoop={true }
+                    >
                         <div>
-                        <Image ratio="1/1" src='/selenium/txtfile.png'/>
+                        <Image src='/selenium/txtfile.png'/>
                         </div>
                         <div >
-                        <Image ratio="21/9" src='/selenium/readfile.png'/>
+                        <Image src='/selenium/readfile.png'/>
                         </div>   
                     </Carousel>
                     <Typography>

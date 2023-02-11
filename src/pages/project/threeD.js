@@ -15,7 +15,7 @@ const title={
    position: 'relative',
    top: -40,
    backgroundColor: "#F8EDE3",
-   maxWidth: "20%",
+   maxWidth: "30%",
    alignItem:"center",
    px:2,
    color:"#815B5B",
@@ -30,28 +30,47 @@ export default function threeD() {
             <Stack spacing={5}>
                <BorderCard>
                         <Typography sx={title} variant="h4">Wireframe modeling</Typography>
-                        <YoutubeVideo name="selenium first ver"src="Uywk9PQqmw8"/>
+                        <YoutubeVideo src="K2_mUTMqUkQ"/>
                         <a href="https://github.com/ItsMeFaquu/WireframeModeling" target="_blank"
             rel="noopener noreferrer">github code link</a>
                      <Typography>
-                     I start this project is to have better understanding about how computer graphic works. I didnt follow any tutorial online. In this project, I met three obstacles, I almost overcome two of them and solve one of them.
+                     I start this project is to have better understanding about how computer graphic works. I didnt follow any tutorial online. In this project, I met four obstacles, I almost overcome two of them and solve two of them.
                      </Typography>
                </BorderCard>
                
                <BorderCard>
+                  <Typography sx={title} variant="h4">Problems</Typography>
                   <Image src='/modeling/perspective.png'/>
                   <YoutubeVideo src="USU4PPZQb9A"/>
                   <Typography>
                      First is the perspective problems. At first I thought it's simply solving similar triangles as in the picture. But the perspective is weird and after experimenting I found out any other value than Z, the perspective will look fine, so I kinda overcome this problems by using square root of Z.
                   </Typography>
                
-                  <Image src='/modeling/rotation.png'/>
-                     
+                  <Carousel 
+                        autoPlay={true}
+                        interval={0.5}
+                        dynamicHeight={true }
+                        infiniteLoop={true }
+                    >
+                  <Image src='/modeling/information.png'/>
+                  <Image src='/modeling/informationFunction.png'/>
+                  </Carousel>
                   <Typography>
-                     Secondly, I implement rotating function which when my mouse click and drag, the camera rotate. But in actual the camera doesnt rotate but everthing is rotated around the camera. So I record the mouse vertical and horizontal movement and save it in a tuple.
+                     Second, I have to find a way to save the information of vertices, edges and faces of a shape. I use a "length" variable to save the information of vertices. For edges, I save information of two index for each edges. I can use those index to get the 2d position of two vertices and draw a line using pygame.draw.line function. For faces, I save four index for square and 3 for pyramid.
+                  </Typography>
+
+
+                  <Image src='/modeling/rotation.png'/>
+                  <Typography>
+                     Third, I implement rotating function which when my mouse click and drag, the camera rotate. But in actual the camera doesnt rotate but everthing is rotated around the camera. So I record the mouse vertical and horizontal movement and save it in a tuple.
                   </Typography>
                   
-                    <Carousel>
+                  <Carousel 
+                        autoPlay={true}
+                        interval={0.5}
+                        dynamicHeight={true }
+                        infiniteLoop={true }
+                    >
                         <div>
                         <Image src='/modeling/movement.png'/>
                         </div>
