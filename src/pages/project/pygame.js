@@ -42,19 +42,19 @@ export default function Pygame() {
                 <Typography sx={title} variant="h4">Features</Typography>
                     <Carousel 
                         autoPlay={true}
-                        interval={5}
-                        dynamicHeight={true }
+                        interval={0.5}
                         infiniteLoop={true }
                     >
                         <div>
                             <Image src='/pygame/pic1.png'/>
+                            <p className="legend">Pic1</p>
                         </div>
                         <div >
                             <Image src='/pygame/code1.png'/>
                         </div>   
                     </Carousel>
                     <Typography>
-                        First of all, I add a rotating feature which player will always face in the cursor direction. I implement this feature using some math as shown in the pic1. Xc represent x-axis value of cursor while Xp represent player. As the origin of xy coordinates system in pygame is at top left and y value increase downward which is different from what Ive learnt in school. Instead of convert the coordinate system to the one I familiar with(I shouldve done that), I come up with my simple approach. Get the reference angle from the absolute value of the difference of x and y value of cursor and player. Check the direction of the cursor relative to player and determind to either add or abstract 90deg. I remember getting absurd spinning animation and multiple crash when implementing this feature such as rotating at opposite direction.
+                        First of all, I add a rotating feature which player will always face in the cursor direction. I implement this feature using some math as shown in the Pic1. Xc represent x-axis value of cursor while Xp represent player. As the origin of xy coordinates system in pygame is at top left and y value increase downward which is different from what Ive learnt in school. Instead of convert the coordinate system to the one I familiar with(I shouldve done that), I come up with my simple approach. Get the reference angle from the absolute value of the difference of x and y value of cursor and player. Check the direction of the cursor relative to player and determind to either add or abstract 90deg. I remember getting absurd spinning animation and multiple crash when implementing this feature such as rotating at opposite direction.
                     </Typography>
                     <Image src='/pygame/code2.png'/>
                     <Typography>

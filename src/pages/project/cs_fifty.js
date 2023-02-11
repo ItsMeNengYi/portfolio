@@ -42,18 +42,22 @@ export default function cs_fifty(params) {
                 <a href="https://github.com/code50/87684677/blob/main/filter-less/helpers.c" target="_blank"
             rel="noopener noreferrer">github code link</a>
                 <Typography>
-                    The first one it the 'filter-less'. Its fun to know how those filter in photographing actually works underneath the hood. And its quite simply to implement. Unlike in the problem it take the average of rgb value in a 9*9 cube, I added a BlurFactor which indicates no of pixels around the pixel to be blured. As shown in the picture, on the left is the output of blurfactor of 10 and right is blurfactor of 1.
+                    The first one it the 'filter-less'. Its fun to know how those filter in photographing actually works underneath the hood. And its quite simply to implement. Unlike in the problem it take the average of rgb value in a 9*9 cube, I added a BlurFactor which indicates no of pixels around the pixel to be blured. As shown in Pic1, on the left is the output of blurfactor of 10 and right is blurfactor of 1.
                 </Typography>
                 
                 <Carousel 
                         autoPlay={true}
-                        interval={5}
-                        dynamicHeight={true }
+                        interval={0.5}
                         infiniteLoop={true }
                     >
-                <Image src='/CS50/blurCode.png'/>
-                <Image src='/CS50/blurFactor.png'/>
+                        <div>
                 <Image src='/CS50/blurFactorCompare.png'/>
+                <p className="legend">Pic 1</p>
+                </div>
+                <Image src='/CS50/blurCode.png'/>
+                
+                <Image src='/CS50/blurFactor.png'/>
+                
                 </Carousel>
             </BorderCard>
 
@@ -73,17 +77,23 @@ export default function cs_fifty(params) {
                 rel="noopener noreferrer">github code link</a>
                 <Typography>
                     In week5 of the course, I get to learn many "fancy" data types and searching algorithms I heard before and I learn that theres a trade-off between time and space. I can obtain higher speed if I use a correct data type. 
-                    Hash table is used in this problems for word searcing in a dictionary. The hard part is the hash function. I chose to give specific index for first n alphabet. I tried first 2,3,4,5 characters hash tables and the picture shows the comparison. As shown in the picture the total time increase form 4 to 5 as the amount of space used is tremendous(10^7 nodes excluding nodes linked after those first nodes) and it takes so much time to load and unload although the time to check does decrease.
+                    Hash table is used in this problems for word searcing in a dictionary. The hard part is the hash function. I chose to give specific index for first n alphabet. I tried first 2,3,4,5 characters hash tables and the Pic1 shows the comparison. As shown in the Pic2 the total time increase form 4 to 5 as the amount of space used is tremendous(10^7 nodes excluding nodes linked after those first nodes) and it takes so much time to load and unload although the time to check does decrease.
                 </Typography>
                 <Carousel 
                         autoPlay={true}
-                        interval={5}
-                        dynamicHeight={true }
+                        interval={0.5}
                         infiniteLoop={true }
                     >
+                <div>   
                 <Image src='/CS50/hash.png'/>
-                <Image src='/CS50/hashCode.png'/>
+                <p className="legend">Pic1</p>
+                </div> 
+                <div>  
                 <Image src='/CS50/compare.png'/>
+                <p className="legend">Pic2</p>
+                </div> 
+                <Image src='/CS50/hashCode.png'/>
+            
                 <Image src='/CS50/fiveCharCode.png'/>
                 </Carousel>
             </BorderCard>

@@ -47,8 +47,7 @@ export default function Selenium(params) {
 
                     <Carousel 
                         autoPlay={true}
-                        interval={5}
-                        dynamicHeight={true }
+                        interval={0.5}
                         infiniteLoop={true }
                     >
                         <div>

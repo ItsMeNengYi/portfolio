@@ -49,7 +49,6 @@ export default function threeD() {
                   <Carousel 
                         autoPlay={true}
                         interval={0.5}
-                        dynamicHeight={true }
                         infiniteLoop={true }
                     >
                   <Image src='/modeling/information.png'/>
@@ -68,7 +67,6 @@ export default function threeD() {
                   <Carousel 
                         autoPlay={true}
                         interval={0.5}
-                        dynamicHeight={true }
                         infiniteLoop={true }
                     >
                         <div>
