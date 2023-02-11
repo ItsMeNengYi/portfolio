@@ -11,5 +11,5 @@ export default function RootLayout({ children }) {
         <AnalyticsWrapper />
       </body>
     </html>
-  );
+  )
 }
