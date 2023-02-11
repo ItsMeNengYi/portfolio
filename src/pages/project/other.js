@@ -32,12 +32,6 @@ export default function other() {
                 <YoutubeVideo src="8tRyHP2RDWA"/>
                 <div style={{width:"200px",height:"220px"}}>
                 <Image src='/other/udemy.png'/>
-                <Link href="../../../other/UE4note1.pdf">
-                    <Typography>UE4 note 1</Typography>
-                </Link>
-                <Link href="../../../other/UE4note2.pdf">
-                    <Typography>UE4 note 2</Typography>
-                </Link>
                 </div>
                 
                     I follow a course in udemy and learnt how to use unreal engine4. Throughout this learning, I learn(most of them on youtube): 
@@ -63,7 +57,13 @@ export default function other() {
                         <li>How object is rendered</li>
                         <li>How animation blending works</li>
                     </ul>
-                
+                    <Typography>Part of notes I wrote following the course:</Typography>
+                <Link href="../../../other/UE4note1.pdf">
+                    <Typography>UE4 note 1</Typography>
+                </Link>
+                <Link href="../../../other/UE4note2.pdf">
+                    <Typography>UE4 note 2</Typography>
+                </Link>
          </BorderCard>
 
          <BorderCard>
@@ -94,7 +94,7 @@ export default function other() {
                     <li> disconnect others wifi connection by deauthentication attack (spamming deauthentication message to router,fun and useful)</li>
                     <li> Basic idea of networking</li>
                 </ul>
-                I also wrote a note for this course.
+                <Typography>Note I wrote following this course:</Typography>
                 <Link href="../../../other/hacking.pdf">
                     <Typography>network hacking note</Typography>
                 </Link>
