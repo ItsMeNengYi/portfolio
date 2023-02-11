@@ -1,5 +1,9 @@
 import { Typography, Stack } from "@mui/material"
-import Image from "next/image"
+
+import Image from "@/components/Image"
+import React, { Component } from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
 import Link from 'next/link'
 import YoutubeVideo from "@/components/Youtube"
 import Page from "@/components/Page"
@@ -40,14 +44,17 @@ export default function cs_fifty(params) {
                 <Typography>
                     The first one it the 'filter-less'. Its fun to know how those filter in photographing actually works underneath the hood. And its quite simply to implement. Unlike in the problem it take the average of rgb value in a 9*9 cube, I added a BlurFactor which indicates no of pixels around the pixel to be blured. As shown in the picture, on the left is the output of blurfactor of 10 and right is blurfactor of 1.
                 </Typography>
-                <Image width='500' height='500' src='/CS50/blurCode.png'/>
-                <Image width='500' height='500' src='/CS50/blurFactor.png'/>
-                <Image width='500' height='500' src='/CS50/blurFactorCompare.png'/>
+                
+                <Carousel>
+                <Image src='/CS50/blurCode.png'/>
+                <Image src='/CS50/blurFactor.png'/>
+                <Image src='/CS50/blurFactorCompare.png'/>
+                </Carousel>
             </BorderCard>
 
             <BorderCard>
                 <Typography sx={title} variant="h4">Filter-more</Typography>
-                <Image width='500' height='500' src='/CS50/canny.png'/>
+                <Image src='/CS50/canny.png'/>
                 <a href="https://github.com/code50/87684677/blob/main/filter-more/helpers.c" target="_blank"
             rel="noopener noreferrer">github code link</a>
                 <Typography>
@@ -61,11 +68,14 @@ export default function cs_fifty(params) {
                 rel="noopener noreferrer">github code link</a>
                 <Typography>
                     In week5 of the course, I get to learn many "fancy" data types and searching algorithms I heard before and I learn that theres a trade-off between time and space. I can obtain higher speed if I use a correct data type. 
-                    Hash table is used in this problems for word searcing in a dictionary. The hard part is the hash function. I chose to give specific index for first three alphabet and I need to come up with a equation as the pictures above. My result is slightly slower as compared to staff
+                    Hash table is used in this problems for word searcing in a dictionary. The hard part is the hash function. I chose to give specific index for first n alphabet. I tried first 2,3,4,5 characters hash tables and the picture shows the comparison. As shown in the picture the total time increase form 4 to 5 as the amount of space used is tremendous(10^7 nodes excluding nodes linked after those first nodes) and it takes so much time to load and unload although the time to check does decrease.
                 </Typography>
-                <Image width='500' height='500' src='/CS50/hash.png'/>
-                <Image width='500' height='500' src='/CS50/hashCode.png'/>
-                <Image width='500' height='500' src='/CS50/compare.png'/>
+                <Carousel>
+                <Image src='/CS50/hash.png'/>
+                <Image src='/CS50/hashCode.png'/>
+                <Image src='/CS50/compare.png'/>
+                <Image src='/CS50/fiveCharCode.png'/>
+                </Carousel>
             </BorderCard>
         </Stack>
         </ContentContainer>

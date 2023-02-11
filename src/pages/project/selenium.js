@@ -1,5 +1,8 @@
 import { Typography, Stack } from "@mui/material"
-import Image from "next/image"
+import Image from "@/components/Image"
+import React, { Component } from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
 import Link from 'next/link'
 import YoutubeVideo from "@/components/Youtube"
 import Page from "@/components/Page"
@@ -41,8 +44,15 @@ export default function Selenium(params) {
 
                     <BorderCard>
                     <Typography sx={title} variant="h4">Title</Typography>
-                    <Image width='500' height='500' src='/selenium/txtfile.png'/>
-                    <Image width='500' height='500' src='/selenium/readfile.png'/>
+
+                    <Carousel>
+                        <div>
+                        <Image ratio="1/1" src='/selenium/txtfile.png'/>
+                        </div>
+                        <div >
+                        <Image ratio="21/9" src='/selenium/readfile.png'/>
+                        </div>   
+                    </Carousel>
                     <Typography>
                         My second approach(which is last version) is to select users using search bar and name. I wrote a function to read .txt file into an array and loop through the array. But then I encountered more obstacles. 
                     </Typography>
@@ -52,7 +62,7 @@ export default function Selenium(params) {
                         Seconly, the user might already block you. I wrote a function to detect if the user has blocked you(which is to check if the textbox is available)
                     </Typography>
 
-                    <Image width='500' height='500' src='/selenium/entername.png'/>
+                    <Image src='/selenium/entername.png'/>
                     <Typography>
                         Furthurmore, I encountered a tideous bug which the user is exist but if you paste the name directly in the search box, the name cant be searched. You need to type the user name one character by one character
                         in order to search the user. So I created another file "ProblemList.txt" to note down those user's name and I wrote a function to enter name one by one at first and gradually increase it speed(which is decrease the time.sleep() parameter). So what my bot do is everytime it enter the user name, if the user can be search, the bot will check if the user has blocked you, if the user profile doesnt appear, it will put the name into "ProblemList.txt" file and reenter the name one character by one character, if the user profile appear to be found then the code will keep going and the bot will write its name in "Failed.txt" if its not and keep goin to the next customer. 

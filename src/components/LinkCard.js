@@ -4,7 +4,7 @@ import { Card, Typography } from "@mui/material"
 export default function LinkCard(props) {
     const { children, sx, link  } = props
 
-    return <a href={link}>
+    return <a style={{textDecoration: 'none'}} href={link}>
         <Card sx={{ 
         "&hover":{
             boxShadow: 3

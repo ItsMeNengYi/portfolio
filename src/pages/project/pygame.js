@@ -1,10 +1,36 @@
 import { Typography, Box,Stack } from "@mui/material"
-import Image from "next/image"
 import YoutubeVideo from "@/components/Youtube"
 import Page from "@/components/Page"
 import ContentContainer from "@/components/ContentContainer"
 import BorderCard from "@/components/BorderCard"
 import Navbar from "@/components/Navbar"
+
+import Image from "@/components/Image"
+import React, { Component } from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
+
+
+
+
+const responsive = {
+    desktop: {
+      breakpoint: { max: 464, min: 0 },
+      items: 3 ,
+      slidesToSlide: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
+
 
 const title={
     position: 'relative',
@@ -35,18 +61,26 @@ export default function Pygame() {
 
                 <BorderCard>
                 <Typography sx={title} variant="h4">Features</Typography>
-                    <Image width='500' height='500' src='/pygame/pic1.png'/>
-                    <Image width='500' height='500' src='/pygame/code1.png'/>
+                    <BorderCard>
+                    <Carousel>
+                        <div>
+                            <Image src='/pygame/pic1.png'/>
+                        </div>
+                        <div >
+                            <Image src='/pygame/code1.png'/>
+                        </div>   
+                    </Carousel>
+                    </BorderCard>
                     <Typography>
                         First of all, I add a rotating feature which player will always face in the cursor direction. I implement this feature using some math as shown in the pic1. Xc represent x-axis value of cursor while Xp represent player. As the origin of xy coordinates system in pygame is at top left and y value increase downward which is different from what Ive learnt in school. Instead of convert the coordinate system to the one I familiar with(I shouldve done that), I come up with my simple approach. Get the reference angle from the absolute value of the difference of x and y value of cursor and player. Check the direction of the cursor relative to player and determind to either add or abstract 90deg. I remember getting absurd spinning animation and multiple crash when implementing this feature such as rotating at opposite direction.
                     </Typography>
-
-                    <Image width='500' height='500' src='/pygame/code2.png'/>
-                    <YoutubeVideo src="zBYnXNOALEU"/>
+                    <Image src='/pygame/code2.png'/>
                     <Typography>
                         I then need to determind which direction will the bullet propagate as in the youtube tutorial the player cant be rotated. I implement this feature using similar math approach. Find the increments of x and y direction and form a vector of magnitude of self.speed which is one of the properties of Bullet class. At first I implement using tangent value as seen in the video below, I didnt figure out why the bullet speed is not consistent but I leave it first as the direction of propagation is okay, afterwards I found out that the tangential value is affecting the bullet speed.
                             Other than direction of bullet, I also implemented a buffed version of shooting bullet which the bullet will be shot from three point as shown in first video.
                     </Typography>
+
+                    <YoutubeVideo src="zBYnXNOALEU"/>
                     <Typography>
                         The source code and exe file can be downloaded in this <a href="https://github.com/ItsMeFaquu/Zekai_hit_shit" target="_blank"
             rel="noopener noreferrer">github link</a>, The Animation, Sound and img file need to be downloaded and placed in the same directory as the pygameTest.exe file for the file to be executable.

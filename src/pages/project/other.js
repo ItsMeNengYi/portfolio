@@ -1,5 +1,8 @@
 import { Typography, Stack } from "@mui/material"
-import Image from "next/image"
+import Image from "@/components/Image"
+import React, { Component } from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
 import Link from 'next/link'
 import YoutubeVideo from "@/components/Youtube"
 import Page from "@/components/Page"
@@ -28,7 +31,9 @@ export default function other() {
                 <Typography sx={title} variant="h4">Unreal Engine 4</Typography>
                 <YoutubeVideo src="8tRyHP2RDWA"/>
                 ## UE4note1 and UE4note2.pdf
-                <Image width='500' height='500' src='/other/udemy.png'/>
+                <div style={{width:"200px",height:"220px"}}>
+                <Image src='/other/udemy.png'/>
+                </div>
                 <Typography>
                     I follow a course in udemy and learnt how to use unreal engine4. Throughout this learning, I learn(most of them on youtube): 
                     C++ syntax, 
@@ -54,7 +59,7 @@ export default function other() {
          <BorderCard>
             <Typography sx={title} variant="h4">Blender</Typography>
             <YoutubeVideo src="FEe7hHzBhQI"/>
-            <Image width='500' height='500' src='/other/blender.png'/>
+            <Image src='/other/blender.png'/>
             <Typography>
                 I learn blender following Blender Guru donut, chair and couch tutorial and I learn:
                 -How to use blender
@@ -64,7 +69,9 @@ export default function other() {
 
          <BorderCard>
             <Typography sx={title} variant="h4">Network hacking</Typography>
-            <Image width='500' height='500' src='/other/network.png'/>
+            <div style={{width:"200px",height:"220px"}}>
+            <Image src='/other/network.png'/>
+            </div>
             ## hacking.pdf
             <Typography>
                 I follow a network hacking course in udemy. I learn:
