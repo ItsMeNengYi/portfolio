@@ -1,5 +1,6 @@
 // import { createTheme } from "@mui/system"
 import { createTheme, ThemeProvider } from "@mui/material"
+import RootLayout from "@/components/RootLayout"
 
 export default function App({ Component, pageProps }) {
 
@@ -13,8 +14,10 @@ export default function App({ Component, pageProps }) {
     }
   })
 
-  return <ThemeProvider theme={theme}>
+  return <RootLayout>
+  <ThemeProvider theme={theme}>
     <Component {...pageProps} />
   </ThemeProvider>
+  </RootLayout>
   // return <Component {...pageProps} />
 }
