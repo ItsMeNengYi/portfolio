@@ -1,10 +1,12 @@
 import { Container, Box } from '@mui/material'
 import Navbar from './Navbar'
+import { AnalyticsWrapper } from './AnalyticsWrapper'
 
 export default function Page(props) {
     const { children, sx } = props
 
-    return <Container
+    return <AnalyticsWrapper>
+    <Container
         maxWidth="100vw"
         height= '100vw'
         sx={{
@@ -13,4 +15,5 @@ export default function Page(props) {
         }}>
         {children}
     </Container >
+    </AnalyticsWrapper>
 }
