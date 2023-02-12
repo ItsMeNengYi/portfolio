@@ -73,7 +73,7 @@ export default function other() {
             <Typography>
                 I learn blender following Blender Guru donut, chair and couch tutorial and I learn:
                 -How to use blender
-                I tried to make a ikea shark model, I encountered many annoying problems such as unknown vertices protruding, uneven mesh. I cant solve those problems and since I already saved changes, only solution for me is to redo the project and I gave up eventually for multiple tries. The video shown is the almost success version. I learn to backup the previous version.
+                I tried to make a ikea shark model, I encountered many annoying problems such as unknown vertices protruding, uneven mesh. I cant solve those problems and since I already saved changes, only solution for me is to redo the project and I gave up eventually for multiple tries. The video shown is the almost succeed version. I learn to backup the previous version.
             </Typography>
          </BorderCard>
 

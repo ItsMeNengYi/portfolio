@@ -39,7 +39,7 @@ const imageHover = {
 
 export default function ProjectHomepage() {
     return <Page>
-        <BorderCard sx={{ width: "80%" }}>
+        <BorderCard >
             <Navbar sx={{ top: 50 }} />
             <Grid container spacing={2} >
                 <Grid item xs={12} md={6}  >

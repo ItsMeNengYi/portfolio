@@ -4,7 +4,7 @@ export default function BorderCard(props) {
     const { children, sx } = props
 
     return <Container
-        maxWidth={false}
+        maxWidth="lg"
         sx={{
             border: '4px solid #815B5B', 
             px:1,
