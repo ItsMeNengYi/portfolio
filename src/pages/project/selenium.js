@@ -9,6 +9,7 @@ import Page from "@/components/Page"
 import ContentContainer from "@/components/ContentContainer"
 import Navbar from "@/components/Navbar"
 import BorderCard from "@/components/BorderCard"
+import GitButton from "@/components/GitButton"
 
 const title={
     position: 'relative',
@@ -22,10 +23,9 @@ const title={
 }
 
 export default function Selenium(params) {
-        return <div>
-            <Page>
+        return <Page>
                 <ContentContainer>
-                    <Navbar sx={{top:20}}/>
+                    <Navbar sx={{top:12}}/>
                     <Stack spacing={5}>
 
                     <BorderCard>
@@ -38,8 +38,7 @@ export default function Selenium(params) {
                     <BorderCard>
                         <Typography sx={[title,{maxWidth: "35%"}]} variant="h4">Spam Bot final ver</Typography>
                         <YoutubeVideo name="selenium send file"src="ChaI6lvdbQM"/>
-                        <a href="https://github.com/ItsMeFaquu/FacebookSpamBot" target="_blank"
-            rel="noopener noreferrer">github code link</a>
+                        <GitButton url="https://github.com/ItsMeFaquu/FacebookSpamBot"/>
                     </BorderCard>
 
                     <BorderCard>
@@ -84,5 +83,4 @@ export default function Selenium(params) {
                     </Stack>
             </ContentContainer>         
         </Page>
-    </div> 
 };

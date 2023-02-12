@@ -10,6 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 import Link from 'next/link'
 import YoutubeVideo from "@/components/Youtube"
+import GitButton from "@/components/GitButton"
 
 const title={
    position: 'relative',
@@ -23,16 +24,14 @@ const title={
 }
 
 export default function threeD() {
-    return <div>
-      <Page>
+    return <Page>
         <ContentContainer>
             <Navbar sx={{top:10}}/>
             <Stack spacing={5}>
                <BorderCard>
                         <Typography sx={title} variant="h4">Wireframe modeling</Typography>
                         <YoutubeVideo src="K2_mUTMqUkQ"/>
-                        <a href="https://github.com/ItsMeFaquu/WireframeModeling" target="_blank"
-            rel="noopener noreferrer">github code link</a>
+                      <GitButton url="https://github.com/ItsMeFaquu/WireframeModeling"/>
                      <Typography>
                      I start this project is to have better understanding about how computer graphic works. I didnt follow any tutorial online. In this project, I met four obstacles, I almost overcome two of them and solve two of them.
                      </Typography>
@@ -87,6 +86,5 @@ export default function threeD() {
          </Stack>
          </ContentContainer>
         </Page>
-    </div>
 
 };

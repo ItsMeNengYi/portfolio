@@ -15,6 +15,7 @@ const title={
     fontFamily:"Arial"
 }
 
+
 export default function PythonLittleGame() {
     return <Page>
         <ContentContainer>
@@ -32,7 +33,7 @@ export default function PythonLittleGame() {
                     <iframe height="400px" width="100%" src="https://replit.com/@nengYiYan/tictactoe?lite=true&outputonly=1" frameborder="no"></iframe>
                 </BorderCard>
                 <BorderCard>
-                    <Typography sx={title}  variant="h5">2048</Typography>
+                    <Typography sx={[title,{maxWidth: "10%",}]}  variant="h5">2048</Typography>
                     <Typography variant="subtitle1">This is the second project which at first I thought is easy to implement as the tictactoe. But then I discovered that there are a lots of rules that cant be simply implemented within lines of code. I start with an easy idea, each blocks(with number in it) will move in the direction of the input given untill it meet with another block or it reach the end. If it meets with block with number, check if both blocks contain same number, if so they simply add up together, if not the moving block will stop beside the other block. One of the problems this approach is if the line is fulled with same number such as 2|2|2|2, after a move the result will be |4|  |  |  | which I expected |2|2| | |.As I desprately wanted to finish the project, I hardcoded some of the "special cases" using if-else statement eventually and once the code works I never try to simplify it. </Typography>
                     <iframe height="400px" width="100%" src="https://replit.com/@nengYiYan/2048?lite=true&outputonly=1" frameborder="no"></iframe>
                 </BorderCard>

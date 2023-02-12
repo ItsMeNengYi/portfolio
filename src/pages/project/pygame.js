@@ -4,6 +4,7 @@ import Page from "@/components/Page"
 import ContentContainer from "@/components/ContentContainer"
 import BorderCard from "@/components/BorderCard"
 import Navbar from "@/components/Navbar"
+import GitButton from "@/components/GitButton"
 
 import Image from "@/components/Image"
 import React, { Component } from 'react'
@@ -23,8 +24,8 @@ const title={
 }
 
 export default function Pygame() {
-    return <div>
-        <Page>
+    return <Page>
+
         <ContentContainer>
             <Navbar sx={{top:10}}/>
             <Stack spacing={5}>
@@ -32,6 +33,7 @@ export default function Pygame() {
                 <BorderCard>
                     <Typography sx={title} variant="h4">Pygame</Typography>
                 <YoutubeVideo src="642X_Dq_1SU"/>
+                    <GitButton url="https://github.com/ItsMeFaquu/Zekai_hit_shit"/>
                     <Typography variant="subtitle1"> 
                         This game is based on this <a href="https://www.youtube.com/watch?v=61eX0bFAsYs&t=2384s&ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83" target="_blank"
             rel="noopener noreferrer">online youtube project</a>. But as you can see, my project and the tutorial is quite different.
@@ -76,6 +78,5 @@ export default function Pygame() {
             </ContentContainer>
         </Page>
         
-    </div>
 
 };

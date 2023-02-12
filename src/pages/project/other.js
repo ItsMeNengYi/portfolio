@@ -22,8 +22,7 @@ const title={
  }
 
 export default function other() {
-    return <div>
-      <Page>
+    return <Page>
         <ContentContainer>
             <Navbar sx={{top:10}}/>
             <Stack spacing={5}>
@@ -101,7 +100,6 @@ export default function other() {
          </BorderCard>
          </Stack>
          </ContentContainer>
-        </Page>
-    </div>
+    </Page>
 
 };
