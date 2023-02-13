@@ -19,6 +19,11 @@ const props = {
             transition: "bottom 0.25s , opacity 0.25s",
             
             transitionTimingFunction: "linear",
+        },
+        "& .projectImage": {
+            opacity:'0.5',
+            transition: "opacity 0.25s",
+            transitionTimingFunction: "linear",
         }
     },
     boxShadow: 'none',
@@ -36,14 +41,6 @@ const descrip = {
 }
 
 
-const imageHover = {
-    "&:hover": {
-        opacity:'0.5'
-    },
-    transition: "opacity 0.5s",
-    transitionTimingFunction: "linear",
-    opacity:'0.1'
-}
 
 export default function ProjectHomepage() {
     return <Page>
@@ -52,7 +49,7 @@ export default function ProjectHomepage() {
             <Grid container spacing={2} >
                 <Grid item xs={12} md={6}  >
                     <LinkCard id="container" sx={props} height="100%" link="/project/python-little-game">
-                        <Image style={imageHover} objectFit='contain' layout="fill" src="/projectImg/littleGame.png" />
+                        <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/littleGame.png" />
                         <Box
                             sx={{
                                 width: '100%',
@@ -72,7 +69,7 @@ export default function ProjectHomepage() {
                 </Grid>
                 <Grid item xs={12} md={6} >
                     <LinkCard sx={props} height="100%" link="/project/pygame">
-                    <Image style={imageHover} objectFit='contain' layout="fill" src="/projectImg/pygameLogo.gif" />
+                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/pygameLogo.gif" />
                         <Box
                             sx={{
                                 width: '100%',
@@ -91,7 +88,7 @@ export default function ProjectHomepage() {
                 </Grid>
                 <Grid item xs={12} md={6} >
                     <LinkCard sx={props} link="/project/selenium">
-                    <Image style={imageHover} objectFit='contain' layout="fill" src="/projectImg/seleniumIcon.png" />
+                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/seleniumIcon.png" />
                         <Box
                             sx={{
                                 width: '100%',
@@ -110,7 +107,7 @@ export default function ProjectHomepage() {
                 </Grid>
                 <Grid item xs={12} md={6} >
                     <LinkCard sx={props} link="/project/threeD">
-                    <Image style={imageHover} objectFit='contain' layout="fill" src="/projectImg/modelingIcon.png" />
+                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/modelingIcon.png" />
                         <Box
                             sx={{
                                 width: '100%',
@@ -129,7 +126,7 @@ export default function ProjectHomepage() {
                 </Grid>
                 <Grid item xs={12} md={6} >
                     <LinkCard sx={props} link="/project/cs_fifty">
-                    <Image style={imageHover} objectFit='contain' layout="fill" src="/projectImg/CS50Icon.png" />
+                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/CS50Icon.png" />
                         <Box
                             sx={{
                                 width: '100%',
@@ -148,7 +145,7 @@ export default function ProjectHomepage() {
                 </Grid>
                 <Grid item xs={12} md={6} >
                     <LinkCard sx={props} link="/project/other">
-                    <Image style={imageHover} objectFit='contain' layout="fill" src="/projectImg/otherIcon.png" />
+                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/otherIcon.png" />
                         <Box
                             sx={{
                                 width: '100%',
