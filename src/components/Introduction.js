@@ -37,7 +37,7 @@ export default function Introduction() {
             </Typography>
             <Typography>嗨，我是能义</Typography>
         </Card>  */}
-        <Card sx={{position:"relative", left:"-5vw"}}>
+        <Card sx={{position:"relative", left:"-9vw"}}>
             <Typography style={{fontFamily:"Segoe UI"}} fontSize="40px">
                         Hi, Im Ren Yick
                 </Typography>

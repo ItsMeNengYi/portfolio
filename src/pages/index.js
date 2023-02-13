@@ -6,6 +6,9 @@ import Navbar from '@/components/Navbar'
 import SocialMedia from '@/components/SocialMedia'
 import BorderCard from '@/components/BorderCard'
 import Introduction from '@/components/Introduction'
+import Card from '@/components/Card'
+import { Stack } from '@mui/system'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -22,10 +25,22 @@ export default function Home() {
             height: "50vh",
             width: "60vw",
             display: 'flex',
-            justifyContent: 'left',
+            justifyContent: 'center',
             alignItems: 'center'}}>
           <Navbar />
-          <Introduction />
+          <Stack direction="row" spacing={2}>
+            <Card>
+            <Introduction 
+                sx={{
+                  position:"relative",
+                  display:"flex",
+                  justifyContent:"left",
+                  alignItems:"center"
+                
+                }}/>
+            </Card>
+            <Image/>
+          </Stack>
           <SocialMedia />
         </BorderCard>
       </Page>
