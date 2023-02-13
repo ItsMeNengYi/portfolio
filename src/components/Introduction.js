@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material"
+import { Grid, Stack, Box, Typography } from "@mui/material"
 import Card from "./Card"
 import Grow from '@mui/material/Grow'
 import Link from "next/link"
@@ -7,6 +7,8 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 import Button from '@mui/material/Button'
 import * as React from 'react'
 import {ThemeProvider,createTheme} from '@mui/material'
+import BorderCard from "./BorderCard"
+import Image from "./Image"
 
 const theme = createTheme({
     palette: {
@@ -19,49 +21,39 @@ const theme = createTheme({
 })
 
 export default function Introduction() {
-    return <Stack position="relative" spacing={2}>
+    return <Grid container >
 
-        {/* <Card 
-         sx={{
-            '&:hover':{
-                fontSize:"70px"
-            },
-            fontSize:"100px",
-            position: "relative",
-            transition: "font-size 0.5s",
-            transitionTimingFunction: "linear",
-            left:"-50%"
-        }}>
-            <Typography sx={{fontSize:"inherit"}}>
+        <Grid item xs={10} position="relative" >
+            <Card sx={{
+                    position:"relative", 
+                    left:"-9vw"}}>
+                <Typography style={{fontFamily:"Segoe UI"}} fontSize="40px">
                     Hi, Im Ren Yick
-            </Typography>
-            <Typography>嗨，我是能义</Typography>
-        </Card>  */}
-        <Card sx={{position:"relative", left:"-9vw"}}>
-            <Typography style={{fontFamily:"Segoe UI"}} fontSize="40px">
-                        Hi, Im Ren Yick
                 </Typography>
-        </Card>
-        {/* <Typography>嗨，我是能义</Typography> */}
-        {/* <Card 
-         sx={{
-            '&:hover':{
-            },
-            position: "relative",
-            top:-88,
-            left:-100
-        }}>
+            </Card>
             
-        </Card> */}
-        
-        <Typography variant="subtitle2" sx={{ color: 'text.secondary' }}>
-            A graduated Foon Yew High School student who is interested in programming and physics
-        </Typography>
-        <ThemeProvider theme={theme}>
-            <Stack direction="row" spacing={1}>
-                <Button href='/aboutMe' variant="outlined" startIcon={<AccountCircleIcon/>}>About me</Button>
-                <Button href='/aboutWebsite' variant="outlined" startIcon={<LanguageIcon/>}>About this Website</Button>
-            </Stack>
-        </ThemeProvider>
-    </Stack>
+            <Typography variant="subtitle2" sx={{ color: 'text.secondary', paddingTop:"40px"}}>
+                A graduated Foon Yew High School student who is interested in programming and physics
+            </Typography>
+            <ThemeProvider theme={theme}>
+                <Stack sx={{paddingTop:"20px"}}direction="row" spacing={1}>
+                    <Button  href='/aboutMe' variant="outlined" startIcon={<AccountCircleIcon/>}>About me</Button>
+                    <Button href='/aboutWebsite' variant="outlined" startIcon={<LanguageIcon/>}>About this Website</Button>
+                </Stack>
+            </ThemeProvider>
+        </Grid>
+
+        <Grid item xs={2}>
+            <Card sx={{ 
+                backgroundColor:"#F8EDE3",
+                width:"300px", 
+                position:"relative", 
+                right:"0%",
+                top:"50%",
+                p:2
+                }}>
+            <Image src='/aboutMe/portrait.jfif'/>
+            </Card>  
+        </Grid>
+    </Grid>
 };

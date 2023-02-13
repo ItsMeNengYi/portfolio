@@ -9,6 +9,7 @@ import Introduction from '@/components/Introduction'
 import Card from '@/components/Card'
 import { Stack } from '@mui/system'
 import Image from 'next/image'
+import { Container } from '@mui/material'
 
 export default function Home() {
   return (
@@ -22,26 +23,23 @@ export default function Home() {
       <Page>
         <BorderCard 
             sx={{position: "relative",
-            height: "50vh",
+            height: "60vh",
             width: "60vw",
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'}}>
+            alignItems: 'center',
+            p:2
+            }}>
           <Navbar />
-          <Stack direction="row" spacing={2}>
-            <Card>
+          <div style={{}}>
             <Introduction 
-                sx={{
-                  position:"relative",
-                  display:"flex",
-                  justifyContent:"left",
-                  alignItems:"center"
-                
-                }}/>
-            </Card>
-            <Image/>
-          </Stack>
-          <SocialMedia />
+              sx={{
+                position:"relative",
+                justifyContent:"left",
+                alignItems:"center"
+              }}/>
+          </div>
+          <SocialMedia/>
         </BorderCard>
       </Page>
     </>
