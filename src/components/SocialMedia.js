@@ -3,6 +3,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+const hover = {
+}
+
+
 export default function SocialMedia({ sx }) {
     return <Box
         display="flex"
@@ -14,25 +18,26 @@ export default function SocialMedia({ sx }) {
             justifyContent:"center",
             bottom: -20,
             ...sx
-        }}
-    >
+        }}>
 
         <a style={{ textDecoration: "none", color: "#815B5B" }}
             href="https://www.instagram.com/renyickgan" target="_blank"
             rel="noopener noreferrer">
-            <InstagramIcon fontSize="large" sx={{ ml: 3,mr:2 }} />
+            <InstagramIcon fontSize="large" sx={[{hover},{ ml: 3,mr:2 }]} />
         </a>
 
         <a style={{ textDecoration: "none", color: "#815B5B" }}
-            href="https://www.facebook.com/profile.php?id=100009107746541" target="_blank"
+            href="https://www.facebook.com/profile.php?id=100009107746541" 
+            target="_blank"
             rel="noopener noreferrer">
-            <FacebookIcon fontSize="large" sx={{mr:2}}/>
+            <FacebookIcon fontSize="large" sx={[{hover},{mr:2}]}/>
         </a>
 
         <a style={{ textDecoration: "none", color: "#815B5B" }}
-            href="https://github.com/ItsMeFaquu" target="_blank"
+            href="https://github.com/ItsMeFaquu" 
+            target="_blank"
             rel="noopener noreferrer">
-            <GitHubIcon fontSize="large" sx={{ mr: 3 }} />
+            <GitHubIcon fontSize="large" sx={[{hover},{ mr: 3 }]} />
         </a>
     </Box>
 };

@@ -28,7 +28,7 @@ export default function Home() {
         <BorderCard 
             sx={{position: "relative",
             height: "60vh",
-            width: "60vw",
+            width: "50vw",
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',

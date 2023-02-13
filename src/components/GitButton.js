@@ -7,7 +7,7 @@ const theme = createTheme({
     palette: {
         primary:{
             main: "#815B5B",
-            dark: "#815B5B",
+            dark: "#2D2424",
             light: '#594545'
         }
     }
@@ -25,5 +25,6 @@ export default function GitButton(props) {
         endIcon={<GitHubIcon/>}>
     Code Link
     {children}
-  </Button></ThemeProvider>
+  </Button>
+  </ThemeProvider>
 }

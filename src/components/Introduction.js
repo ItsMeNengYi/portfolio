@@ -27,22 +27,21 @@ export default function Introduction() {
         <Grid item xs={10} position="relative" >
             <Card sx={{
                     position:"relative", 
-                    left:"-7vw"}}>
-                <Typography style={{
-                    fontFamily:"Cormorant",
-                    fontSize:"45px"}}>
+                    left:"-6vw"}}>
+                <Typography variant="h3" style={{
+                    fontFamily:"Cormorant"}}>
                     Hi, Im Ren Yick
                 </Typography>
             </Card>
             
-            <Typography variant="subtitle1" 
+            <Typography variant="h6" 
                         sx={{ 
                             fontFamily:"Cormorant",
                             color: 'text.secondary', paddingTop:"30px"}}>
                 A graduated Foon Yew High School student who is interested in programming and physics
             </Typography>
             <ThemeProvider theme={theme}>
-                <Stack sx={{paddingTop:"20px"}}direction="row" spacing={1}>
+                <Stack sx={{paddingTop:"40px"}}direction="row" spacing={1}>
                     <Button  href='/aboutMe' variant="outlined" startIcon={<AccountCircleIcon/>}>About me</Button>
                     <Button href='/aboutWebsite' variant="outlined" startIcon={<LanguageIcon/>}>About this Website</Button>
                 </Stack>
@@ -54,8 +53,8 @@ export default function Introduction() {
                 backgroundColor:"#F8EDE3",
                 width:"300px", 
                 position:"relative", 
-                right:"0%",
-                top:"50%",
+                right:"-40%",
+                top:"40%",
                 p:2
                 }}>
             <Image src='/aboutMe/portrait.jfif'/>
