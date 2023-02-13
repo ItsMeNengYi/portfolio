@@ -22,7 +22,7 @@ export default function Home() {
             height: "50vh",
             width: "60vw",
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'left',
             alignItems: 'center'}}>
           <Navbar />
           <Introduction />

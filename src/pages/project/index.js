@@ -1,5 +1,5 @@
 // mui
-import { Card, Box, Grid, Typography, dividerClasses } from "@mui/material"
+import { Box, Grid, Typography, dividerClasses } from "@mui/material"
 // components
 import Page from "@/components/Page"
 import BorderCard from "@/components/BorderCard"

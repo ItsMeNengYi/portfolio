@@ -19,7 +19,7 @@ const theme = createTheme({
 })
 
 export default function Introduction() {
-    return <Stack spacing={2}>
+    return <Stack position="relative" spacing={2}>
 
         {/* <Card 
          sx={{
@@ -37,10 +37,11 @@ export default function Introduction() {
             </Typography>
             <Typography>嗨，我是能义</Typography>
         </Card>  */}
-
-        <Typography fontSize="40px" textShadow="#FC0 1px 0 10px">
-                    Hi, Im Ren Yick
-            </Typography>
+        <Card sx={{position:"relative", left:"-5vw"}}>
+            <Typography style={{fontFamily:"Segoe UI"}} fontSize="40px">
+                        Hi, Im Ren Yick
+                </Typography>
+        </Card>
         {/* <Typography>嗨，我是能义</Typography> */}
         {/* <Card 
          sx={{
