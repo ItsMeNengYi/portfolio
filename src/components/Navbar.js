@@ -3,12 +3,13 @@ import { AppBar, Toolbar, IconButton, Typography, Button, Box,Grid } from "@mui/
 import MenuIcon from '@mui/icons-material/Menu';
 
 const textDeco = {
-    textDecoration:"none",
+    
     '&:hover':{
         textDecoration:"underline",
-        textDecorationColor:"#594545",
-        textShadow:"#FC0 1px 0 10px"
+        
     },
+    textShadow:"#594545 1px 0 10px",
+    textDecoration:"none",
     textShadow:"none",
     transition: "textDecoration 1s",
     transitionTimingFunction: "linear",
@@ -33,9 +34,8 @@ export default function Navbar(props) {
         <Box sx={{mr:"20px",ml:"20px"}}>
         <Typography
             variant="h4"
-            sx={textDeco}
         >
-            <Link href="/"  style={textDeco}>Home</Link>
+            <Link href="/" sx={textDeco} style={textDeco}>Home</Link>
         </Typography>
         </Box>
         <Box sx={{mr:"20px"}}>

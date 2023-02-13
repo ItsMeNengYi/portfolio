@@ -1,5 +1,5 @@
 // mui
-import { Card, Box, Grid, Typography } from "@mui/material"
+import { Card, Box, Grid, Typography, dividerClasses } from "@mui/material"
 // components
 import Page from "@/components/Page"
 import BorderCard from "@/components/BorderCard"
@@ -7,26 +7,34 @@ import Navbar from '@/components/Navbar'
 import LinkCard from '@/components/LinkCard'
 import Image from "next/legacy/image"
 import { shadows } from '@mui/system'
+import {Container} from "@mui/material"
 
 
 const props = {
     "&:hover": {
-        boxShadow: 3
+        boxShadow: 3,
+        "& .description": {
+            opacity: '1',
+            bottom:"0px",
+            transition: "bottom 0.25s , opacity 0.25s",
+            
+            transitionTimingFunction: "linear",
+        }
     },
     boxShadow: 'none',
     position: 'relative',
-    overflow: 'hidden',
-    "&:hover > #Image": {
-        opacity:'0.5'
-    }
+    overflow: 'hidden'
+    
 }
 
 const descrip = {
-    "&:hover": {
-        textShadow: "#815B5B 15px 0 10px"
-    },
+    
     textShadow: 'none',
+    opacity: '0',
+    position:"relative",
+    bottom:"-20px"
 }
+
 
 const imageHover = {
     "&:hover": {
@@ -54,9 +62,10 @@ export default function ProjectHomepage() {
                             }}
                         >
                             Some little games
-                            <Typography sx={descrip} variant="subtitle1" >
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
                                 Games can be played on terminal
                             </Typography>
+                            
                         </Box>
 
                     </LinkCard>
@@ -73,7 +82,7 @@ export default function ProjectHomepage() {
                             }}
                         >
                         Pygame
-                        <Typography sx={descrip} variant="subtitle1" >
+                        <Typography sx={descrip} className="description"  variant="subtitle1" >
                             Little shooting made using pygame
                         </Typography>
                         </Box>
@@ -92,7 +101,7 @@ export default function ProjectHomepage() {
                             }}
                         >
                         Selenium
-                        <Typography variant="subtitle1" >
+                        <Typography className="description" sx={descrip} variant="subtitle1" >
                             Facebook spam bot
                         </Typography>
                         </Box>
@@ -111,7 +120,7 @@ export default function ProjectHomepage() {
                             }}
                         >
                         Wireframe Modeling
-                        <Typography variant="subtitle1" >
+                        <Typography className="description" sx={descrip} variant="subtitle1" >
                             explore 3d modeling
                         </Typography>
                         </Box>
@@ -130,7 +139,7 @@ export default function ProjectHomepage() {
                             }}
                         >
                         CS50
-                        <Typography variant="subtitle1" >
+                        <Typography className="description" sx={descrip} variant="subtitle1" >
                             learning basic computer science
                         </Typography>
                         </Box>
@@ -149,7 +158,7 @@ export default function ProjectHomepage() {
                             }}
                         >
                         Others
-                        <Typography variant="subtitle1" >
+                        <Typography className="description" sx={descrip} variant="subtitle1" >
                             things I also learned
                         </Typography>
                         </Box>
