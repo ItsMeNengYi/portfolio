@@ -17,19 +17,19 @@ export default function SocialMedia({ sx }) {
         }}
     >
 
-        <a style={{ textDecoration: "none", color: "black" }}
+        <a style={{ textDecoration: "none", color: "#815B5B" }}
             href="https://www.instagram.com/renyickgan" target="_blank"
             rel="noopener noreferrer">
             <InstagramIcon fontSize="large" sx={{ ml: 3,mr:2 }} />
         </a>
 
-        <a style={{ textDecoration: "none", color: "black" }}
+        <a style={{ textDecoration: "none", color: "#815B5B" }}
             href="https://www.facebook.com/profile.php?id=100009107746541" target="_blank"
             rel="noopener noreferrer">
             <FacebookIcon fontSize="large" sx={{mr:2}}/>
         </a>
 
-        <a style={{ textDecoration: "none", color: "black" }}
+        <a style={{ textDecoration: "none", color: "#815B5B" }}
             href="https://github.com/ItsMeFaquu" target="_blank"
             rel="noopener noreferrer">
             <GitHubIcon fontSize="large" sx={{ mr: 3 }} />
