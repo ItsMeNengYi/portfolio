@@ -2,6 +2,7 @@ import { Typography } from "@mui/material"
 import BorderCard from "@/components/BorderCard"
 import Page from "@/components/Page"
 import Navbar from "@/components/Navbar"
+import ContentContainer from "@/components/ContentContainer"
 
 const title={
     position: 'relative',
@@ -16,6 +17,7 @@ const title={
 
 export default function AboutMe() {
     return <Page>
+        <ContentContainer>
         <Navbar sx={{top:"0"}}/>
         <BorderCard>
         <Typography sx={title} variant="h4">About Me</Typography>
@@ -29,5 +31,6 @@ export default function AboutMe() {
         </Typography>
         </Typography>
         </BorderCard>
+    </ContentContainer>
     </Page>
-};
+}
