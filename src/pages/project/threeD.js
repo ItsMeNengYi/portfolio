@@ -16,7 +16,7 @@ const title={
    position: 'relative',
    top: -40,
    backgroundColor: "#F8EDE3",
-   maxWidth: "30%",
+   maxWidth: "35%",
    alignItem:"center",
    px:2,
    color:"#815B5B",
@@ -38,7 +38,7 @@ export default function threeD() {
                </BorderCard>
                
                <BorderCard>
-                  <Typography sx={title} variant="h4">Problems</Typography>
+                  <Typography sx={[title,{maxWidth: "20%"}]} variant="h4">Problems</Typography>
                   <Image src='/modeling/perspective.png'/>
                   <YoutubeVideo src="USU4PPZQb9A"/>
                   <Typography>

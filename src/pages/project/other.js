@@ -28,11 +28,12 @@ export default function other() {
             <Stack spacing={5}>
             <BorderCard>
                 <Typography sx={title} variant="h4">Unreal Engine 4</Typography>
-                <YoutubeVideo src="8tRyHP2RDWA"/>
-                <div style={{width:"200px",height:"220px"}}>
-                <Image src='/other/udemy.png'/>
-                </div>
-                
+                <Stack direction="row" spacing={2}>
+                    <YoutubeVideo src="8tRyHP2RDWA"/>
+                    <div style={{width:"200px",height:"220px"}}>
+                    <Image src='/other/udemy.png'/>
+                    </div>
+                </Stack>
                     I follow a course in udemy and learnt how to use unreal engine4. Throughout this learning, I learn(most of them on youtube): 
                     <ul>
                         <li>C++ syntax,</li>

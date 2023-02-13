@@ -48,7 +48,7 @@ export default function ProjectHomepage() {
             <Navbar sx={{ top: 50 }} />
             <Grid container spacing={2} >
                 <Grid item xs={12} md={6}  >
-                    <LinkCard id="container" sx={props} height="100%" link="/project/python-little-game">
+                    <LinkCard  sx={props} height="100%" link="/project/python-little-game">
                         <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/littleGame.png" />
                         <Box
                             sx={{
