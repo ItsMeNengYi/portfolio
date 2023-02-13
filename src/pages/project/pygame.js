@@ -32,7 +32,7 @@ export default function Pygame() {
 
                 <BorderCard>
                     <Typography sx={title} variant="h4">Pygame</Typography>
-                <YoutubeVideo src="642X_Dq_1SU"/>
+                    <YoutubeVideo src="642X_Dq_1SU"/>
                     <GitButton url="https://github.com/ItsMeFaquu/Zekai_hit_shit"/>
                     <Typography variant="subtitle1"> 
                         This game is based on this <a style={{color:"#815B5B"}} href="https://www.youtube.com/watch?v=61eX0bFAsYs&t=2384s&ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83" target="_blank"
