@@ -10,6 +10,7 @@ import {ThemeProvider,createTheme} from '@mui/material'
 import BorderCard from "./BorderCard"
 import Image from "./Image"
 
+
 const theme = createTheme({
     palette: {
         primary:{
@@ -26,13 +27,18 @@ export default function Introduction() {
         <Grid item xs={10} position="relative" >
             <Card sx={{
                     position:"relative", 
-                    left:"-9vw"}}>
-                <Typography style={{fontFamily:"Segoe UI"}} fontSize="40px">
+                    left:"-7vw"}}>
+                <Typography style={{
+                    fontFamily:"Cormorant",
+                    fontSize:"45px"}}>
                     Hi, Im Ren Yick
                 </Typography>
             </Card>
             
-            <Typography variant="subtitle2" sx={{ color: 'text.secondary', paddingTop:"40px"}}>
+            <Typography variant="subtitle1" 
+                        sx={{ 
+                            fontFamily:"Cormorant",
+                            color: 'text.secondary', paddingTop:"30px"}}>
                 A graduated Foon Yew High School student who is interested in programming and physics
             </Typography>
             <ThemeProvider theme={theme}>
