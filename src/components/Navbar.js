@@ -34,8 +34,9 @@ export default function Navbar(props) {
         <Box sx={{mr:"20px",ml:"20px"}}>
         <Typography
             variant="h4"
+            sx={textDeco}
         >
-            <Link href="/" sx={textDeco} style={textDeco}>Home</Link>
+            <Link href="/" style={textDeco}>Home</Link>
         </Typography>
         </Box>
         <Box sx={{mr:"20px"}}>

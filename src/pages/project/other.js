@@ -9,6 +9,7 @@ import Page from "@/components/Page"
 import Navbar from "@/components/Navbar"
 import ContentContainer from "@/components/ContentContainer"
 import BorderCard from "@/components/BorderCard"
+import NoteButton from "@/components/NoteButton"
 
 const title={
     position: 'relative',
@@ -58,12 +59,10 @@ export default function other() {
                         <li>How animation blending works</li>
                     </ul>
                     <Typography>Part of notes I wrote following the course:</Typography>
-                <Link href="../../../other/UE4note1.pdf">
-                    <Typography>UE4 note 1</Typography>
-                </Link>
-                <Link href="../../../other/UE4note2.pdf">
-                    <Typography>UE4 note 2</Typography>
-                </Link>
+                    <Stack direction="row" spacing={2}>
+                    <NoteButton url="../../../other/UE4note1.pdf">UE4 Note1</NoteButton>   
+                    <NoteButton url="../../../other/UE4note2.pdf">UE4 Note2</NoteButton>
+                    </Stack>
          </BorderCard>
 
          <BorderCard>
@@ -95,9 +94,8 @@ export default function other() {
                     <li> Basic idea of networking</li>
                 </ul>
                 <Typography>Note I wrote following this course:</Typography>
-                <Link href="../../../other/hacking.pdf">
-                    <Typography>network hacking note</Typography>
-                </Link>
+                <NoteButton url="../../../other/hacking.pdf">Network_Hacking </NoteButton>   
+                  
          </BorderCard>
          </Stack>
          </ContentContainer>

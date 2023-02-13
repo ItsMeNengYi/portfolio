@@ -35,11 +35,10 @@ export default function Pygame() {
                 <YoutubeVideo src="642X_Dq_1SU"/>
                     <GitButton url="https://github.com/ItsMeFaquu/Zekai_hit_shit"/>
                     <Typography variant="subtitle1"> 
-                        This game is based on this <a href="https://www.youtube.com/watch?v=61eX0bFAsYs&t=2384s&ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83" target="_blank"
+                        This game is based on this <a style={{color:"#815B5B"}} href="https://www.youtube.com/watch?v=61eX0bFAsYs&t=2384s&ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83" target="_blank"
             rel="noopener noreferrer">online youtube project</a>. But as you can see, my project and the tutorial is quite different.
                     </Typography>
                 </BorderCard>
-
                 <BorderCard>
                 <Typography sx={title} variant="h4">Features</Typography>
                     <Carousel 
@@ -66,7 +65,7 @@ export default function Pygame() {
 
                     <YoutubeVideo src="zBYnXNOALEU"/>
                     <Typography>
-                        The source code and exe file can be downloaded in this <a href="https://github.com/ItsMeFaquu/Zekai_hit_shit" target="_blank"
+                        The source code and exe file can be downloaded in this <a style={{color:"#815B5B"}} href="https://github.com/ItsMeFaquu/Zekai_hit_shit" target="_blank"
             rel="noopener noreferrer">github link</a>, The Animation, Sound and img file need to be downloaded and placed in the same directory as the pygameTest.exe file for the file to be executable.
                     </Typography>
                     <Typography>
