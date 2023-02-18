@@ -53,8 +53,8 @@ export default function Introduction() {
                 backgroundColor:"#F8EDE3",
                 width:"300px", 
                 position:"relative", 
-                right:"-40%",
-                top:"40%",
+                right:"-10%",
+                top:"60%",
                 p:2
                 }}>
             <Image src='/aboutMe/portrait.jfif'/>
