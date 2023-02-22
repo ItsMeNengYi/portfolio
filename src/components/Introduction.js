@@ -9,6 +9,7 @@ import * as React from 'react'
 import {ThemeProvider,createTheme} from '@mui/material'
 import BorderCard from "./BorderCard"
 import Image from "./Image"
+import AssignmentIcon from '@mui/icons-material/Assignment'
 
 
 const theme = createTheme({
@@ -44,6 +45,7 @@ export default function Introduction() {
                 <Stack sx={{paddingTop:"40px"}}direction="row" spacing={1}>
                     <Button  href='/aboutMe' variant="outlined" startIcon={<AccountCircleIcon/>}>About me</Button>
                     <Button href='/aboutWebsite' variant="outlined" startIcon={<LanguageIcon/>}>About this Website</Button>
+                    <Button href='/project' variant="outlined" startIcon={<AssignmentIcon/>}>My Projects</Button>
                 </Stack>
             </ThemeProvider>
         </Grid>
