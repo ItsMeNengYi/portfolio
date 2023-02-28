@@ -11,6 +11,11 @@ import { Stack } from '@mui/system'
 import Image from 'next/image'
 import { Container } from '@mui/material'
 
+import {isMobile} from 'react-device-detect'
+
+
+
+
 export default function Home() {
   return (
     <>
@@ -27,23 +32,22 @@ export default function Home() {
       <Page>
         <BorderCard 
             sx={{position: "relative",
-            height: "60vh",
-            width: "50vw",
+            height: isMobile?"80vw":"60vh",
+            width: isMobile?"90vw":"50vw",
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             p:2
             }}>
           <Navbar />
-          <div style={{}}>
-            <Introduction 
+          <Introduction 
               sx={{
                 position:"relative",
                 justifyContent:"left",
                 alignItems:"center"
               }}/>
-          </div>
           <SocialMedia/>
+          
         </BorderCard>
       </Page>
     </>

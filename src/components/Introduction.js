@@ -10,7 +10,7 @@ import {ThemeProvider,createTheme} from '@mui/material'
 import BorderCard from "./BorderCard"
 import Image from "./Image"
 import AssignmentIcon from '@mui/icons-material/Assignment'
-
+import { isMobile } from "react-device-detect"
 
 const theme = createTheme({
     palette: {
@@ -49,13 +49,12 @@ export default function Introduction() {
                 </Stack>
             </ThemeProvider>
         </Grid>
-
+        
         <Grid item xs={2}>
             <Card sx={{ 
                 backgroundColor:"#F8EDE3",
-                width:"300px", 
+                width:isMobile?"200px":"300px",
                 position:"relative", 
-                right:"-10%",
                 top:"60%",
                 p:2
                 }}>
