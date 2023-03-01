@@ -1,6 +1,7 @@
 import { Container, Box ,ThemeProvider,createTheme} from '@mui/material'
 import Navbar from './Navbar'
 import RootLayout from './RootLayout'
+import { isMobile } from 'react-device-detect'
 
 const theme = createTheme({
         typography: {
@@ -23,7 +24,7 @@ export default function Page(props) {
             height= '100vw'
             sx={{
                 ...sx,
-                p: 10
+                p: isMobile?8:10
             }}>
             {children}
         </Container >

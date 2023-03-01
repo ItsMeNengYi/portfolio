@@ -45,7 +45,7 @@ export default function Navbar(props) {
         }}
         
     >
-        <Box sx={{}}>
+        <Box>
             <Typography
                 sx={textDeco}
                 >  
@@ -56,7 +56,7 @@ export default function Navbar(props) {
                             href="/" 
                             variant="contained" 
                             startIcon={<ArrowRightIcon />}>
-                            <Typography sx={{}} variant="h4" style={textDeco}>
+                            <Typography variant="h4" style={textDeco}>
                                 Home
                             </Typography>
                         </Button>
@@ -73,7 +73,7 @@ export default function Navbar(props) {
                     |
             </Typography>
 
-        <Box sx={{}}>
+        <Box>
             <Typography
                 sx={textDeco}
             >
@@ -84,7 +84,7 @@ export default function Navbar(props) {
                             href="/project" 
                             variant="contained" 
                             startIcon={<ArrowRightIcon fontSize='large'/>}>
-                            <Typography sx={{}} variant="h4" style={textDeco}>
+                            <Typography variant="h4" style={textDeco}>
                                 Project
                             </Typography>
                         </Button>
