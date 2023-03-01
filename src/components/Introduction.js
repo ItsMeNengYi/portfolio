@@ -55,7 +55,7 @@ export default function Introduction() {
                 backgroundColor:"#F8EDE3",
                 width:isMobile?"200px":"300px",
                 position:"relative", 
-                top:"60%",
+                top:isMobile?"110%":"60%",
                 p:2
                 }}>
             <Image src='/aboutMe/portrait.jfif'/>
