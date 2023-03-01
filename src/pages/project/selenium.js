@@ -10,12 +10,13 @@ import ContentContainer from "@/components/ContentContainer"
 import Navbar from "@/components/Navbar"
 import BorderCard from "@/components/BorderCard"
 import GitButton from "@/components/GitButton"
+import { isMobile } from "react-device-detect"
 
 const title={
     position: 'relative',
     top: -40,
     backgroundColor: "#F8EDE3",
-    maxWidth: "28%",
+    maxWidth: isMobile?"80%":"28%",
     alignItem:"center",
     px:2,
     color:"#815B5B",
@@ -36,7 +37,7 @@ export default function Selenium(params) {
                         </Typography>
                     </BorderCard>
                     <BorderCard>
-                        <Typography sx={[title,{maxWidth: "35%"}]} variant="h4">Spam Bot final ver</Typography>
+                        <Typography sx={[title,{maxWidth: isMobile?"80%":"35%"}]} variant="h4">Spam Bot final ver</Typography>
                         <YoutubeVideo name="selenium send file"src="ChaI6lvdbQM"/>
                         <GitButton url="https://github.com/ItsMeFaquu/FacebookSpamBot"/>
                     </BorderCard>

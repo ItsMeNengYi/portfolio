@@ -10,13 +10,14 @@ import Image from "@/components/Image"
 import React, { Component } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
+import { isMobile } from "react-device-detect"
 
 
 const title={
     position: 'relative',
     top: -40,
     backgroundColor: "#F8EDE3",
-    maxWidth: "15%",
+    maxWidth: isMobile?"50%":"15%",
     alignItem:"center",
     px:2,
     color:"#815B5B",

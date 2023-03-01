@@ -1,10 +1,11 @@
 import YouTube from "react-youtube"
+import { isMobile } from "react-device-detect";
 
 export default function YoutubeVideo(props) {
     const {src} = props
     const opts = {
-        height: "390",
-        width: "640",
+        height: isMobile?"185":"390",
+        width: isMobile?"320":"640",
         playerVars: {
             autoplay: 1,
         },

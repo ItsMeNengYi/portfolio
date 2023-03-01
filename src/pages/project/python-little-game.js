@@ -3,12 +3,13 @@ import Page from "@/components/Page"
 import ContentContainer from "@/components/ContentContainer"
 import BorderCard from "@/components/BorderCard"
 import Navbar from "@/components/Navbar"
+import { isMobile } from "react-device-detect"
 
 const title={
     position: 'relative',
-    top: -30,
+    top: isMobile?-35:-30,
     backgroundColor: "#F8EDE3",
-    maxWidth: "15%",
+    maxWidth: isMobile?"50%":"15%",
     alignItem:"center",
     px:2,
     color:"#815B5B",

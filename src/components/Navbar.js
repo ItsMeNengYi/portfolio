@@ -7,6 +7,7 @@ import MenuList from '@mui/material/MenuList'
 import Stack from '@mui/material/Stack'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight'
 import {ThemeProvider,createTheme} from '@mui/material'
+import { isMobile } from 'react-device-detect'
 
 const theme = createTheme({
     palette: {

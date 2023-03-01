@@ -8,7 +8,7 @@ import LinkCard from '@/components/LinkCard'
 import Image from "next/legacy/image"
 import { shadows } from '@mui/system'
 import {Container} from "@mui/material"
-
+import { isMobile } from "react-device-detect"
 
 const props = {
     "&:hover": {
@@ -45,7 +45,7 @@ const descrip = {
 export default function ProjectHomepage() {
     return <Page>
         <BorderCard >
-            <Navbar sx={{ top: 50 }} />
+            <Navbar sx={{ top: isMobile?40:50 }} />
             <Grid container spacing={2} >
                 <Grid item xs={12} md={6}  >
                     <LinkCard  sx={props} height="100%" link="/project/python-little-game">

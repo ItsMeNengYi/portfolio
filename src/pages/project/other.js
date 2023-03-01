@@ -10,12 +10,13 @@ import Navbar from "@/components/Navbar"
 import ContentContainer from "@/components/ContentContainer"
 import BorderCard from "@/components/BorderCard"
 import NoteButton from "@/components/NoteButton"
+import { isMobile } from "react-device-detect"
 
 const title={
     position: 'relative',
     top: -40,
     backgroundColor: "#F8EDE3",
-    maxWidth: "30%",
+    maxWidth: isMobile?"90%":"30%",
     alignItem:"center",
     px:2,
     color:"#815B5B",
@@ -66,7 +67,7 @@ export default function other() {
          </BorderCard>
 
          <BorderCard>
-            <Typography sx={[title,{maxWidth: "15%"}]} variant="h4">Blender</Typography>
+            <Typography sx={[title,{maxWidth: isMobile?"50%":"15%"}]} variant="h4">Blender</Typography>
             <YoutubeVideo src="FEe7hHzBhQI"/>
             <Image src='/other/blender.png'/>
             <Typography>

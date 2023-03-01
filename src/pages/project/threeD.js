@@ -11,12 +11,13 @@ import { Carousel } from 'react-responsive-carousel'
 import Link from 'next/link'
 import YoutubeVideo from "@/components/Youtube"
 import GitButton from "@/components/GitButton"
+import { isMobile } from "react-device-detect"
 
 const title={
    position: 'relative',
    top: -40,
    backgroundColor: "#F8EDE3",
-   maxWidth: "35%",
+   maxWidth: isMobile?"50%":"35%",
    alignItem:"center",
    px:2,
    color:"#815B5B",
@@ -38,7 +39,7 @@ export default function threeD() {
                </BorderCard>
                
                <BorderCard>
-                  <Typography sx={[title,{maxWidth: "20%"}]} variant="h4">Problems</Typography>
+                  <Typography sx={[title,{maxWidth: isMobile?"50%":"20%"}]} variant="h4">Problems</Typography>
                   <Image src='/modeling/perspective.png'/>
                   <YoutubeVideo src="USU4PPZQb9A"/>
                   <Typography>

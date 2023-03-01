@@ -11,12 +11,13 @@ import ContentContainer from "@/components/ContentContainer"
 import Navbar from "@/components/Navbar"
 import BorderCard from "@/components/BorderCard"
 import GitButton from "@/components/GitButton"
+import { isMobile } from "react-device-detect"
 
 const title={
     position: 'relative',
     top: -40,
     backgroundColor: "#F8EDE3",
-    maxWidth: "22%",
+    maxWidth: isMobile?"40%":"22%",
     alignItem:"center",
     px:2,
     color:"#815B5B",
@@ -37,7 +38,7 @@ export default function cs_fifty(params) {
             </BorderCard>
 
             <BorderCard>
-                <Typography sx={title} variant="h4">Filter-less</Typography>
+                <Typography sx={[title,{maxWidth: isMobile?"60%":"22%"}]} variant="h4">Filter-less</Typography>
                 <GitButton url="https://github.com/code50/87684677/blob/main/filter-less/helpers.c"/>
                 <Typography>
                     The first one it the 'filter-less'. Its fun to know how those filter in photographing actually works underneath the hood. And its quite simply to implement. Unlike in the problem it take the average of rgb value in a 9*9 cube, I added a BlurFactor which indicates no of pixels around the pixel to be blured. As shown in Pic1, on the left is the output of blurfactor of 10 and right is blurfactor of 1.
@@ -60,7 +61,7 @@ export default function cs_fifty(params) {
             </BorderCard>
 
             <BorderCard>
-                <Typography sx={title} variant="h4">Filter-more</Typography>
+                <Typography sx={[title,{maxWidth: isMobile?"60%":"22%"}]} variant="h4">Filter-more</Typography>
                 <Image src='/CS50/canny.png'/>
                 <GitButton url="https://github.com/code50/87684677/blob/main/filter-more/helpers.c"/>
                 <Typography>
