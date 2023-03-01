@@ -61,7 +61,7 @@ export default function cs_fifty(params) {
             </BorderCard>
 
             <BorderCard>
-                <Typography sx={[title,{maxWidth: isMobile?"60%":"22%"}]} variant="h4">Filter-more</Typography>
+                <Typography sx={title} variant="h4">Filter-more</Typography>
                 <Image src='/CS50/canny.png'/>
                 <GitButton url="https://github.com/code50/87684677/blob/main/filter-more/helpers.c"/>
                 <Typography>
