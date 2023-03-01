@@ -32,8 +32,8 @@ export default function Home() {
       <Page>
         <BorderCard 
             sx={{position: "relative",
-            height: isMobile?"80vw":"60vh",
-            width: isMobile?"90vw":"50vw",
+            height: isMobile?"80vh":"60vh",
+            width: isMobile?"99vw":"50vw",
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -44,7 +44,7 @@ export default function Home() {
               sx={{
                 position:"relative",
                 justifyContent:"left",
-                alignItems:"center"
+                alignItems:"center",
               }}/>
           <SocialMedia/>
           

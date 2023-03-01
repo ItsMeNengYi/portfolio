@@ -28,8 +28,8 @@ export default function Introduction() {
         <Grid item xs={10} position="relative" >
             <Card sx={{
                     position:"relative", 
-                    left:"-6vw"}}>
-                <Typography variant="h3" style={{
+                    left:isMobile?"-20vw":"-6vw"}}>
+                <Typography width="100%" noWrap="true" variant="h3" sx={{display:"inline"}}style={{
                     fontFamily:"Cormorant"}}>
                     Hi, Im Ren Yick
                 </Typography>
@@ -42,7 +42,7 @@ export default function Introduction() {
                 A graduated Foon Yew High School student who is interested in programming and physics
             </Typography>
             <ThemeProvider theme={theme}>
-                <Stack sx={{paddingTop:"40px"}}direction="row" spacing={1}>
+                <Stack sx={{paddingTop:"40px",maxHeight:"50px"}}direction={{ xs: 'column', sm: 'row' }} spacing={1}>
                     <Button  href='/aboutMe' variant="outlined" startIcon={<AccountCircleIcon/>}>About me</Button>
                     <Button href='/aboutWebsite' variant="outlined" startIcon={<LanguageIcon/>}>About this Website</Button>
                     <Button href='/project' variant="outlined" startIcon={<AssignmentIcon/>}>My Projects</Button>
