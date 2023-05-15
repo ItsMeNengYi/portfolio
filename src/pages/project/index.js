@@ -40,8 +40,6 @@ const descrip = {
     bottom:"-20px"
 }
 
-
-
 export default function ProjectHomepage() {
     return <Page>
         <BorderCard >
@@ -67,6 +65,7 @@ export default function ProjectHomepage() {
 
                     </LinkCard>
                 </Grid>
+
                 <Grid item xs={12} md={6} >
                     <LinkCard sx={props} height="100%" link="/project/pygame">
                     <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/pygameLogo.gif" />
@@ -86,6 +85,28 @@ export default function ProjectHomepage() {
                     </LinkCard>
 
                 </Grid>
+                
+                <Grid item xs={12} md={6}  >
+                    <LinkCard  sx={props} height="100%" link="/project/arduino">
+                        <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/Arduino.png" />
+                        <Box
+                            sx={{
+                                width: '100%',
+                                height: 400,
+                                position: 'relative',
+                                zIndex: 100,
+                            }}
+                        >
+                            Arduino
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                Control spotify via hand movement and wirelessly
+                            </Typography>
+                            
+                        </Box>
+
+                    </LinkCard>
+                </Grid>
+
                 <Grid item xs={12} md={6} >
                     <LinkCard sx={props} link="/project/selenium">
                     <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/seleniumIcon.png" />
@@ -162,7 +183,6 @@ export default function ProjectHomepage() {
                     </LinkCard>
 
                 </Grid>
-
             </Grid>
         </BorderCard>
     </Page>
