@@ -32,7 +32,7 @@ export default function Home() {
       <Page>
         <BorderCard 
             sx={{position: "relative",
-            height: isMobile?"70vh":"60vh",
+            height: isMobile?"70vh":"50vh",
             width: isMobile?"99vw":"50vw",
             display: 'flex',
             justifyContent: 'center',
