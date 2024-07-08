@@ -39,7 +39,7 @@ export default function Introduction() {
                         sx={{ 
                             fontFamily:"Cormorant",
                             color: 'text.secondary', paddingTop:"30px"}}>
-                A graduated Foon Yew High School student who is interested in programming and physics
+                A graduated Foon Yew High School student who is interested in programming
             </Typography>
             <ThemeProvider theme={theme}>
                 <Stack sx={{paddingTop:"40px",maxHeight:"50px"}}direction={{ xs: 'column', sm: 'row' }} spacing={1}>
