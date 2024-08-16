@@ -34,7 +34,7 @@ export default function Arduino() {
                 <BorderCard>
                     <Typography sx={title} variant="h4">Arduino</Typography>
                     <YoutubeVideo src="P_-oD3pWcM0"/>
-                    <GitButton url="https://github.com/ItsMeFaquu/Arduino/tree/main/Bluetooth"/>
+                    <GitButton url="https://github.com/ItsMeNengYi/Arduino/tree/main/Bluetooth"/>
                     <Typography>
                     This is my first Arduino project. I can control skip track, setting volume with hand movement. I have this idea of hand movement controlling sound when Im playing around with sensor I have and I discovered that theres a sensor which can determine the distance between the object in front of it. Then I quickly realised that with this sensor I can do a lot of application which one of those is this project. Im glad that C++ programming skill I learned when learning unreal engine is coming in handy here.
                     </Typography>
@@ -62,7 +62,7 @@ export default function Arduino() {
                 <BorderCard>
                     <Typography sx={title} variant="h4">Display</Typography>
                         <YoutubeVideo src="P_-oD3pWcM0"/>
-                        <GitButton url="https://github.com/ItsMeFaquu/Arduino/blob/main/Bluetooth/Main/Display.cpp"/>
+                        <GitButton url="https://github.com/ItsMeNengYi/Arduino/blob/main/Bluetooth/Main/Display.cpp"/>
                         <Typography>
                             I use row-column scan method to decrease the pin needed to control the leds, the led will display row by row. I wrote a function "stringToArray" which take in a string and return a 2D array of boolean which 1 is on and 0 is off, eg: the return value of HI will be 
                             <Typography>
@@ -88,7 +88,7 @@ export default function Arduino() {
                 <BorderCard>
                     <Typography sx={title} variant="h4">Ultrasonic Sensor</Typography>
                     <YoutubeVideo src="P_-oD3pWcM0"/>
-                    <GitButton url="https://github.com/ItsMeFaquu/Arduino/blob/main/Bluetooth/Main/Ultrasound.cpp"/>
+                    <GitButton url="https://github.com/ItsMeNengYi/Arduino/blob/main/Bluetooth/Main/Ultrasound.cpp"/>
                     <Typography>
                         This ultrasonic sensor can determind the distance of the object in front of it by emmiting an ultrasonic wave which will be reflected by the object and received by the sensor. With the approx speed of sound in air(speed of air molecule) and the time taken for the wave to echo back, I can calculate the distance and speed of the object moving.I used the calculated speed to determine if the object(hand) movement. 
                     </Typography>
@@ -96,14 +96,14 @@ export default function Arduino() {
                 <BorderCard>
                     <Typography sx={title} variant="h4">Bluetooth Module</Typography>
                     <YoutubeVideo src="P_-oD3pWcM0"/>
-                    <GitButton url="https://github.com/ItsMeFaquu/Arduino/blob/main/Bluetooth/Main/Bluetooth.cpp"/>
+                    <GitButton url="https://github.com/ItsMeNengYi/Arduino/blob/main/Bluetooth/Main/Bluetooth.cpp"/>
                     <Typography>
                         I use HC-05 to send character to computer which is running python script which each character indicates an unique command.
                     </Typography>
                 </BorderCard>
                 <BorderCard>
                     <Typography sx={title} variant="h4">Python</Typography>
-                    <GitButton url="https://github.com/ItsMeFaquu/Arduino/blob/main/Bluetooth/Main/spotipy"/>
+                    <GitButton url="https://github.com/ItsMeNengYi/Arduino/blob/main/Bluetooth/Main/spotipy"/>
                     <Typography>
                         I use pyserial to access paired devices(HC-05) and establish serial communication(connect to HC-05), both computer will send character with utf-8 encode. The name of current track is send one char by one char, so it will send an initiator "[" which indicate the start of song name and "]" indicate the end of the name.
                     </Typography>

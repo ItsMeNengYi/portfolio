@@ -32,7 +32,7 @@ export default function threeD() {
                <BorderCard>
                         <Typography sx={title} variant="h4">Wireframe modeling</Typography>
                         <YoutubeVideo src="K2_mUTMqUkQ"/>
-                      <GitButton url="https://github.com/ItsMeFaquu/WireframeModeling"/>
+                      <GitButton url="https://github.com/ItsMeNengYi/WireframeModeling"/>
                      <Typography>
                      I start this project is to have better understanding about how computer graphic works. I didnt follow any tutorial online. In this project, I met four obstacles, I almost overcome two of them and solve two of them.
                      </Typography>

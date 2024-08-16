@@ -37,7 +37,7 @@ export default function SocialMedia({ sx }) {
         </a>
 
         <a style={{ textDecoration: "none", color: "#815B5B" }}
-            href="https://github.com/ItsMeFaquu" 
+            href="https://github.com/ItsMeNengYi" 
             target="_blank"
             rel="noopener noreferrer">
             <GitHubIcon fontSize="large" sx={[hover,{ mr: 3 }]} />

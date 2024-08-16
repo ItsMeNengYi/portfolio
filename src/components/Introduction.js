@@ -36,10 +36,10 @@ export default function Introduction() {
             </Card>
             
             <Typography variant="h6" 
-                        sx={{ 
-                            fontFamily:"Cormorant",
-                            color: 'text.secondary', paddingTop:"30px"}}>
-                A graduated Foon Yew High School student who is interested in programming
+                sx={{ 
+                    fontFamily:"Cormorant",
+                    color: 'text.secondary', paddingTop:"30px"}}>
+                Undergraduate Computer Science student in NUS
             </Typography>
             <ThemeProvider theme={theme}>
                 <Stack sx={{paddingTop:"40px",maxHeight:"50px"}}direction={{ xs: 'column', sm: 'row' }} spacing={1}>

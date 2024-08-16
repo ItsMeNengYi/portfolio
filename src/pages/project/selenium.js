@@ -39,7 +39,7 @@ export default function Selenium(params) {
                     <BorderCard>
                         <Typography sx={[title,{maxWidth: isMobile?"80%":"35%"}]} variant="h4">Spam Bot final ver</Typography>
                         <YoutubeVideo name="selenium send file"src="ChaI6lvdbQM"/>
-                        <GitButton url="https://github.com/ItsMeFaquu/FacebookSpamBot"/>
+                        <GitButton url="https://github.com/ItsMeNengYi/FacebookSpamBot"/>
                     </BorderCard>
 
                     <BorderCard>

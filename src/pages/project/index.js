@@ -46,8 +46,8 @@ export default function ProjectHomepage() {
             <Navbar sx={{ top: isMobile?40:50 }} />
             <Grid container spacing={2} >
                 <Grid item xs={12} md={6}  >
-                    <LinkCard  sx={props} height="100%" link="/project/python-little-game">
-                        <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/littleGame.png" />
+                    <LinkCard  sx={props} height="100%" link="/project/orbital">
+                        <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/RaspberryPiLogo.png" />
                         <Box
                             sx={{
                                 width: '100%',
@@ -56,19 +56,21 @@ export default function ProjectHomepage() {
                                 zIndex: 100,
                             }}
                         >
-                            Some little games
+                            Orbital 2024
                             <Typography className="description" sx={descrip}  variant="subtitle1" >
-                                Games can be played on terminal
+                                A summer programme I engaged in buidling a ground drone for renting
+                            </Typography>
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                    -2024
                             </Typography>
                             
                         </Box>
 
                     </LinkCard>
                 </Grid>
-
-                <Grid item xs={12} md={6} >
-                    <LinkCard sx={props} height="100%" link="/project/pygame">
-                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/pygameLogo.gif" />
+                <Grid item xs={12} md={6}  >
+                    <LinkCard  sx={props} height="100%" link="/project/hexapod">
+                        <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/Arduino.png" />
                         <Box
                             sx={{
                                 width: '100%',
@@ -77,15 +79,18 @@ export default function ProjectHomepage() {
                                 zIndex: 100,
                             }}
                         >
-                        Pygame
-                        <Typography sx={descrip} className="description"  variant="subtitle1" >
-                            Little shooting made using pygame
-                        </Typography>
+                            Hexapod
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                A Hexapod built using arduino uno and 3d printed parts
+                            </Typography>
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                    -2023
+                            </Typography>
+                            
                         </Box>
-                    </LinkCard>
 
+                    </LinkCard>
                 </Grid>
-                
                 <Grid item xs={12} md={6}  >
                     <LinkCard  sx={props} height="100%" link="/project/arduino">
                         <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/Arduino.png" />
@@ -97,9 +102,12 @@ export default function ProjectHomepage() {
                                 zIndex: 100,
                             }}
                         >
-                            Arduino
+                            Spotify Controller
                             <Typography className="description" sx={descrip}  variant="subtitle1" >
                                 Control spotify via hand movement and wirelessly
+                            </Typography>
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                    -2022
                             </Typography>
                             
                         </Box>
@@ -118,9 +126,12 @@ export default function ProjectHomepage() {
                                 zIndex: 100,
                             }}
                         >
-                        Selenium
+                        WebCrawler
                         <Typography className="description" sx={descrip} variant="subtitle1" >
                             Facebook spam bot
+                        </Typography>
+                        <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                -2022
                         </Typography>
                         </Box>
                     </LinkCard>
@@ -141,6 +152,9 @@ export default function ProjectHomepage() {
                         <Typography className="description" sx={descrip} variant="subtitle1" >
                             explore 3d modeling
                         </Typography>
+                        <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                -2022
+                        </Typography>
                         </Box>
                     </LinkCard>
 
@@ -160,6 +174,9 @@ export default function ProjectHomepage() {
                         <Typography className="description" sx={descrip} variant="subtitle1" >
                             learning basic computer science
                         </Typography>
+                        <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                -2022
+                        </Typography>
                         </Box>
                     </LinkCard>
 
@@ -178,6 +195,53 @@ export default function ProjectHomepage() {
                         Others
                         <Typography className="description" sx={descrip} variant="subtitle1" >
                             things I also learned
+                        </Typography>
+                        <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                -2021 ~ 2022
+                        </Typography>
+                        </Box>
+                    </LinkCard>
+                </Grid>
+                <Grid item xs={12} md={6}  >
+                    <LinkCard  sx={props} height="100%" link="/project/python-little-game">
+                        <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/littleGame.png" />
+                        <Box
+                            sx={{
+                                width: '100%',
+                                height: 400,
+                                position: 'relative',
+                                zIndex: 100,
+                            }}
+                        >
+                            Some little games
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                Games can be played on terminal
+                            </Typography>
+                            <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                    -2021
+                            </Typography>
+                        </Box>
+
+                    </LinkCard>
+                </Grid>
+
+                <Grid item xs={12} md={6} >
+                    <LinkCard sx={props} height="100%" link="/project/pygame">
+                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/pygameLogo.gif" />
+                        <Box
+                            sx={{
+                                width: '100%',
+                                height: 400,
+                                position: 'relative',
+                                zIndex: 100,
+                            }}
+                        >
+                        Pygame
+                        <Typography sx={descrip} className="description"  variant="subtitle1" >
+                            Little shooting game made using pygame
+                        </Typography>
+                        <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                -2021
                         </Typography>
                         </Box>
                     </LinkCard>
