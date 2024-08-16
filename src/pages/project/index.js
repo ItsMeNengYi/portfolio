@@ -181,27 +181,6 @@ export default function ProjectHomepage() {
                     </LinkCard>
 
                 </Grid>
-                <Grid item xs={12} md={6} >
-                    <LinkCard sx={props} link="/project/other">
-                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/otherIcon.png" />
-                        <Box
-                            sx={{
-                                width: '100%',
-                                height: 400,
-                                position: 'relative',
-                                zIndex: 100,
-                            }}
-                        >
-                        Others
-                        <Typography className="description" sx={descrip} variant="subtitle1" >
-                            things I also learned
-                        </Typography>
-                        <Typography className="description" sx={descrip}  variant="subtitle1" >
-                                                -2021 ~ 2022
-                        </Typography>
-                        </Box>
-                    </LinkCard>
-                </Grid>
                 <Grid item xs={12} md={6}  >
                     <LinkCard  sx={props} height="100%" link="/project/python-little-game">
                         <Image className="projectImage" style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/littleGame.png" />
@@ -246,6 +225,27 @@ export default function ProjectHomepage() {
                         </Box>
                     </LinkCard>
 
+                </Grid>
+                <Grid item xs={12} md={6} >
+                    <LinkCard sx={props} link="/project/other">
+                    <Image style={{opacity:'0.1'}} objectFit='contain' layout="fill" src="/projectImg/otherIcon.png" />
+                        <Box
+                            sx={{
+                                width: '100%',
+                                height: 400,
+                                position: 'relative',
+                                zIndex: 100,
+                            }}
+                        >
+                        Others
+                        <Typography className="description" sx={descrip} variant="subtitle1" >
+                            things I also learned
+                        </Typography>
+                        <Typography className="description" sx={descrip}  variant="subtitle1" >
+                                                -2021 ~ 2022
+                        </Typography>
+                        </Box>
+                    </LinkCard>
                 </Grid>
             </Grid>
         </BorderCard>
