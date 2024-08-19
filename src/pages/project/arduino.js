@@ -36,7 +36,7 @@ export default function Arduino() {
                     <YoutubeVideo src="P_-oD3pWcM0"/>
                     <GitButton url="https://github.com/ItsMeNengYi/Arduino/tree/main/Bluetooth"/>
                     <Typography>
-                    This is my first Arduino project. I can control skip track, setting volume with hand movement. I have this idea of hand movement controlling sound when Im playing around with sensor I have and I discovered that theres a sensor which can determine the distance between the object in front of it. Then I quickly realised that with this sensor I can do a lot of application which one of those is this project. Im glad that C++ programming skill I learned when learning unreal engine is coming in handy here.
+                    This was my first Arduino project, where I created a system to control track skipping and volume settings using hand movements. The idea came to me while experimenting with a sensor I had, which could detect the distance between itself and an object. I quickly realized that this sensor had numerous potential applications, one of which led to this project. I’m pleased that the C++ programming skills I gained while learning Unreal Engine proved useful here.
                     </Typography>
                 </BorderCard>
                 <BorderCard>

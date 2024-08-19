@@ -35,6 +35,7 @@ export default function Hexapod() {
                     <Typography sx={title} variant="h4">Hexapod</Typography>
                     <YoutubeVideo mute src="oiYocJaSG-k"/>
                     <GitButton url="https://github.com/ItsMeNengYi/Hexapod"/>
+                    <Image src="/Hexapod/hexapod.jpg"></Image>
                     <Typography>
                         My first robotics project using 3d printing 
                     </Typography>
