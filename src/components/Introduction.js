@@ -43,6 +43,7 @@ export default function Introduction() {
             </Typography>
             <ThemeProvider theme={theme}>
                 <Stack sx={{paddingTop:"40px",maxHeight:"50px"}}direction={{ xs: 'column', sm: 'row' }} spacing={1}>
+                    <Button  href='https://drive.google.com/file/d/1sIqRAVJQP-qfM66NUh9qMz4hDmcO-eWf/view?usp=sharing' variant="outlined" startIcon={<AccountCircleIcon/>}>Resume</Button>
                     <Button  href='/aboutMe' variant="outlined" startIcon={<AccountCircleIcon/>}>About me</Button>
                     <Button href='/aboutWebsite' variant="outlined" startIcon={<LanguageIcon/>}>About this Website</Button>
                     <Button href='/project' variant="outlined" startIcon={<AssignmentIcon/>}>My Projects</Button>
